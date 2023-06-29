@@ -1,0 +1,66 @@
+btnbgopp
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"><gradient
+    android:gradientRadius="0dp"
+    android:startColor="#97D7DF" android:centerColor="#E89BB7" android:endColor="#E89BB7" android:angle="0"/>
+    <corners android:radius="14dp"></corners>
+
+
+</shape>
+
+
+button.xml
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+
+    <gradient
+        android:gradientRadius="0dp"
+        android:startColor="#D81B60" android:centerColor="#D81B60" android:endColor="#5B0571" android:angle="0"/>
+    <corners android:radius="34dp"></corners>
+
+
+</shape>
+
+buttonbg
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"><gradient
+    android:gradientRadius="0dp"
+    android:startColor="#C087CF" android:centerColor="#C087CF" android:endColor="#07F8DF" android:angle="0"/>
+    <corners android:radius="14dp"></corners>
+
+
+</shape>
+
+
+buttonmain.xml
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient
+        android:gradientRadius="0dp"
+        android:startColor="#FF950E" android:centerColor="#E6095A" android:endColor="#E6095A" android:angle="0"/>
+
+
+</shape>
+
+buttonopp.xml
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"><gradient
+    android:gradientRadius="0dp"
+    android:startColor="#07F8DF" android:centerColor="#C087CF" android:endColor="#C087CF" android:angle="0"/>
+    <corners android:radius="14dp"></corners>
+
+</shape>
+
+
+
+introbg
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"><gradient
+    android:gradientRadius="0dp"
+    android:startColor="#C087CF" android:centerColor="#C087Cf" android:endColor="#E89BB7" android:angle="0"/>
+
+
+
+</shape>
+

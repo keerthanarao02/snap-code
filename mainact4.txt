@@ -1,0 +1,210 @@
+package com.example.myapplication;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+public class MainActivity4 extends AppCompatActivity {
+    Button button19;
+    Button button17;
+    Button button18;
+    Button button20;
+    Button button21;
+    Button button22;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main5);
+        button19=findViewById(R.id.button19);
+        button19.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity4.this,StructC.class);
+                startActivity(intent);
+            }
+        });
+        button17=findViewById(R.id.button17);
+        button17.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity4.this,branch_flow.class);
+                startActivity(intent);
+            }
+        });
+        button18=findViewById(R.id.button18);
+        button18.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity4.this,Character.class);
+                startActivity(intent);
+            }
+        });
+        button20=findViewById(R.id.button20);
+        button20.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity4.this,controlflow.class);
+                startActivity(intent);
+            }
+        });
+        button21=findViewById(R.id.button21);
+        button21.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity4.this,filesys.class);
+                startActivity(intent);
+            }
+        });
+        button22=findViewById(R.id.button22);
+        button22.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity4.this,pointers.class);
+                startActivity(intent);
+            }
+        });
+
+    }
+}
+
+
+xml
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBD8EF"
+    tools:context=".MainActivity3">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="401dp"
+        android:layout_height="95dp"
+        android:fontFamily="serif"
+        android:text="Data Structures"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#100F0F"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="295dp"
+        android:layout_height="65dp"
+        android:background="@drawable/buttonbg"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Arrays"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#111212"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="302dp"
+        android:layout_height="67dp"
+        android:background="@drawable/buttonopp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Linked List"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#0B0A0A"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.342" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="304dp"
+        android:layout_height="63dp"
+        android:background="@drawable/buttonbg"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Stacks"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#070707"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="301dp"
+        android:layout_height="65dp"
+        android:background="@drawable/buttonopp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Queues"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#0E0E0E"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.649" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="294dp"
+        android:layout_height="71dp"
+        android:background="@drawable/buttonbg"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Hashing"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#070707"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.804" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="298dp"
+        android:layout_height="69dp"
+        android:background="@drawable/buttonopp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Trees"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#0C0C0C"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975" />
+</androidx.constraintlayout.widget.ConstraintLayout>

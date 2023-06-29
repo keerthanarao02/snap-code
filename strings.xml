@@ -1,0 +1,1069 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">SnapCode</string>
+    <string name="lets_start_to_learn">lets start to learn</string>
+    <string name="data_structures">Data Structures</string>
+    <string name="basic_c">Basic C</string>
+    <string name="searching_and_sorting_techniques">Searching and sorting techniques</string>
+    <string name="algorithms">Algorithms</string>
+    <string name="sample_programs">Sample Programs</string>
+    <string name="dfs_and_bfs">DFS and BFS</string>
+    <string name="kruskals">Kruskals</string>
+    <string name="travelling_salesman_problem">Travelling Salesman Problem</string>programming
+    <string name="hamiltonian_cycle">Hamiltonian Cycle</string>
+    <string name="n_queens">N-Queens</string>
+    <string name="programming">It is the process of writing code to facilitate specific actions in a computer, application or software program, and instructs them on how to perform.</string>
+    <string name="prgmlanguage">It is a system of notation for writing computer programs.Most programming languages are text based formal languages.</string>
+    <string name="why_pgm">-To develop the technologies that have become an essential part of our daily lives.                                                                                             -It activates brains learning centres.    -Programming language helps in speeding up the input and output processes in a machine.</string>
+    <string name="imp">Build games,Embedded Software,Medical Technologies,Banking more accessible(upi,gpay,phonepay…),Online Shopping</string>
+    <string name="app">It helps you in getting code easily not only code but even some basic information of concept.And not only basic C but other applications such as datastructures algorithms some sample programs.</string>
+    <string name="us">This app is been developed by team "SPAM BYTES".\n And if you have any queries you can do mail us at     spambytes@gmail.com</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="what_is_programming_language">What is Programming Language</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="about_app">About App</string>
+    <string name="about_us">About Us</string>
+    <string name="hi">Next</string>
+    <string name="why_to_learn_programming">Why to learn Programming</string>
+    <string name="applications">Applications</string>
+    <string name="str_c">The basic structure of a C program is divided into 6 parts which makes it easy to read Sections of the C Program
+    <b>Documentation
+    Preprocessor Section
+    Definition
+    Global Declaration
+    Main Function()
+    Sub Programs</b></string>
+    <string name="cdef">
+1.<b>Documentation</b>:This section consists of the description of the program, the name of the program, and the creation date and time of the program. It is specified at the start of theprogram in the form of comments. \n
+2.<b>Preprocessor Section</b>: All the header files of the program will be declared in the preprocessor section of the program. Header files help us to access other’s improved code into our code. \n
+3.<b>Definition Section</b>: In this section, we define different constants. The keyword define is used in this part. \n
+4.<b>Global Declaration Section</b>: This part of the code is the part where the global variables are declared. All the global variable used are declared in this part. The user-defined functions are also declared in this part of the code. \n
+5.<b>Main Function Section</b>:Every C-programs needs to have the main function. Each main function contains 2 parts. A declaration part and an Execution part.
+*<b>The declaration part</b> is the part where all the variables are declared.
+*<b>The execution part </b> begins with the curly brackets and ends with the curly close bracket. \n
+6.<b>Sub Program Section</b>: All the user-defined functions are defined in this section of the program.
+    </string>
+    <string name="todo">TODO</string>
+    <string name="binary"><b>"Binary Search is a searching algorithm used in a sorted array by repeatedly dividing the search interval in half." \nBinary Search Algorithm can be implemented in the following two ways\n1.Recursive Method \n2.Iterative Method \n\n</b></string>
+
+    <string name="algo">"The basic steps to perform Binary Search are:"\n1.Sort the array in ascending order. \n2.Set the low index to the first element of the array and the high index to the last element. \n3.Set the middle index to the average of the low and high indices. \n4.If the element at the middle index is the target element, return the middle index. \n5.If the target element is less than the element at the middle index, set the high index to the middle index – 1. \n6.If the target element is greater than the element at the middle index, set the low index to the middle index + 1. \n7.Repeat steps 3-6 until the element is found or it is clear that the element is not present in the array. \n\n
+    </string>
+
+    <string name="recur"><c>1. Recursive Method \n\n</c>#include <![CDATA[<stdio.h>\n// A recursive binary search function. It returns location of x in given array arr[l..r] is present,otherwise -1 \n int binarySearch(int arr[], int l, int r, int x) \n{ \nif (r >= l) { \nint mid = l + (r - l) / 2; \n// If the element is present at the middle \nif (arr[mid] == x) \nreturn mid; \n// If element is smaller than mid, then it can only be present in left subarray \n if (arr[mid] = x) \nreturn binarySearch(arr, l, mid - 1, x); \n// Else the element can only be present in right subarray \nreturn binarySearch(arr, mid + 1, r, x); \n} \n// We reach here when element is not present in array\nreturn -1; \} \nint main(void) \n{ \nint arr[] = { 2, 3, 4, 10, 40 }; \nint n = sizeof(arr) / sizeof(arr[0]); \nint x = 10; \nint result = binarySearch(arr, 0, n - 1, x); \n(result == -1) \n? printf("Element is not present in array") \n: printf("Element is present at index %d", result); \nreturn 0; \n} \n ]]></string>
+    <string name="iterative"><c>2.Iterative Method: \n\n</c> // C program to implement iterative Binary Search \n&lt;#include &lt;stdio.h&gt; \nint binarySearch(int arr[], int l, int r, int x) \n{ \nwhile (l &lt;= r) { \nint m = l + (r - l) / 2; \n// Check if x is present at mid \nif (arr[m] == x) \nreturn m; \n// If x greater, ignore left half \nif (arr[m] &lt; x) \nl = m + 1; \n// If x is smaller, ignore right half \nelse \nr = m - 1; \n} \n// if we reach here, then element was not present \nreturn -1; \n} \nint main(void) \n{ \nint arr[] = { 2, 3, 4, 10, 40 }; \nint n = sizeof(arr) / sizeof(arr[0]); \nint x = 10; \nint result = binarySearch(arr, 0, n - 1, x); \n(result == -1) ? printf("Element is not present" \n" in array") \n: printf("Element is present at " \n"index %d", \nresult); \nreturn 0; \n} \n\n </string>
+    <string name="bsadv"><c><b>Applications of Binary search:</b></c>\n1.Searching in machine learning: Binary search can be used as a building block for more complex algorithms used in machine learning, such as algorithms for training neural networks or finding the optimal hyperparameters for a model.\n2.Commonly used in Competitive Programming.\n3.Can be used for searching in computer graphics. Binary search can be used as a building block for more complex algorithms used in computer graphics, such as algorithms for ray tracing or texture mapping.\n4.Can be used for searching a database. Binary search can be used to efficiently search a database of records, such as a customer database or a product catalog.\n
+</string>
+    <string name="bubble"><b>BUBBLE SORT</b> \nBubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order.<b>How does Bubble Sort Work?</b> \nInput: arr[] = {5, 1, 4, 2, 8}\n</string>
+    <string name="working">
+First Pass: \n
+
+Bubble sort starts with very first two elements, comparing them to check which one is greater.\n
+( 5 1 4 2 8 ) –> ( 1 5 4 2 8 ), Here, algorithm compares the first two elements, and swaps since 5 > 1. \n
+( 1 5 4 2 8 ) –>  ( 1 4 5 2 8 ), Swap since 5 > 4 \n
+( 1 4 5 2 8 ) –>  ( 1 4 2 5 8 ), Swap since 5 > 2 \n
+( 1 4 2 5 8 ) –> ( 1 4 2 5 8 ), Now, since these elements are already in order (8 > 5), algorithm does not swap them. \n\n
+        Second Pass: \n
+        Now, during second iteration it should look like this:\n
+( 1 4 2 5 8 ) –> ( 1 4 2 5 8 ) \n
+( 1 4 2 5 8 ) –> ( 1 2 4 5 8 ), Swap since 4 > 2 \n
+( 1 2 4 5 8 ) –> ( 1 2 4 5 8 ) \n
+( 1 2 4 5 8 ) –>  ( 1 2 4 5 8 ) \n\n
+Third Pass: \n
+
+Now, the array is already sorted, but our algorithm does not know if it is completed.\n
+The algorithm needs one whole pass without any swap to know it is sorted.\n
+( 1 2 4 5 8 ) –> ( 1 2 4 5 8 ) \n
+( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )\n
+( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )\n
+    ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 ) \n\n</string>
+
+    <string name="bubalgo">1.Run a nested for loop to traverse the input array using two variables i and j, such that 0 ≤ i  &lt; (n-1) and 0 ≤ j &lt; (n-i-1)\n2.If arr[j] is greater than arr[j+1] then swap these adjacent elements, else move on \n3.Print the sorted array\n
+</string>
+    <string name="implementation">#include &lt;stdio.h&gt; \nvoid swap(int* xp, int* yp) \n{ \nint temp = *xp; \n*xp = *yp; \n*yp = temp; \n} \n// A function to implement bubble sort \nvoid bubbleSort(int arr[], int n) \n{ \nint i, j; \nfor (i = 0; i &lt; n - 1; i++) \n// Last i elements are already in place \nfor (j = 0; j &lt; n - i - 1; j++) \nif (arr[j] &gt; arr[j + 1])\nswap(&amp;arr[j], &amp;arr[j + 1]); \n} \n/* Function to print an array */ \nvoid printArray(int arr[], int size) \n{ \nint i; \nfor (i = 0; i &lt; size; i++) \nprintf(&quot;%d &quot;, arr[i]); \nprintf(&quot;\n&quot;); \n} \n
+    </string>
+    <string name="bbsad"><b>Advantages:</b>\n1.Bubble sort is easy to understand and implement.\n2.It does not require any additional memory space.\n3.It’s adaptability to different types of data.\n\n<b>Disadvantages:</b>\n1.Bubble sort has a time complexity of O(n^2) which makes it very slow for large data sets.\n2.It is not efficient for large data sets, because it requires multiple passes through the data.\n3.It is not a stable sorting algorithm, meaning that elements with the same key value may not maintain their relative order in the sorted output.\n
+    </string>
+    <string name="arrays">
+"Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.  To create an array, define the data type (like int) and specify the name of the array followed by square brackets []. "
+    </string>
+    <string name="operations">There are a number of operations that can be performed on an array which are:\n  1.Traversal\n 2.Copying\n 3.Reversing\n 4.Sorting\n 5.Insertion\n 6.Deletion\n 7.Searching\n 8.Merging
+    </string>
+    <string name="arrayadv">"1.Array stores data elements of the same data type.\n 2.Maintains multiple variable names using a single name.\n Arrays help to maintain large data under a single variable name. This avoids the confusion of using multiple variables. \n3.Arrays can be used for sorting data elements. Different sorting techniques like the Bubble sort, Insertion sort, Selection sort, etc use arrays to store and sort elements easily.\n 4.Arrays can be used for performing matrix operations. Many databases, small and large, consist of one-dimensional and two-dimensional arrays whose elements are records. \n5.Arrays can be used for CPU scheduling.  \n6.Lastly, arrays are also used to implement other data structures like Stacks, Queues, Heaps, Hash tables, etc. "
+    </string>
+    <string name="arrysrccode"><![CDATA["// C Program Array to find the average of the numbers  \n #include <stdio.h>\n int main()\n  {  \n  //Array declaration  \n int marks[10], i, n, sum = 0, average; \n printf(\"Enter n: \"); //Asking user to enter number array size \n scanf(\"%d\", &n); //Reading array elements \n for(i=0; i<n; ++i) \n  { \n printf(\"Enter number%d: \",i+1);\n  //Asking user to enter array elements  \n  scanf(\"%d\", &marks[i]); //Reading array elements \n sum += marks[i];\n   } \n  average = sum/n;  \n printf(\"Average = %d\", average); \n \n//Printing output   \n return 0; \n }  \n Output: \n Enter n: 5  \n Enter number1: 10\n Enter number2: 15 \nEnter number3: 20\n Enter number4: 25 \n Enter number5: 30 \n Average = 20 "]]>
+    </string>
+
+    <string name="ll">"A Linked List is a linear data structure. Every linked list has two parts, the data section and the address section that holds the address of the next element in the list, which is called a node. "</string>
+    <string name="lloper">"Traversal - access each element of the linked list\n Insertion - adds a new element to the linked list\n Deletion - removes the existing elements\n Search - find a node in the linked list\n Sort - sort the nodes of the linked list\n "</string>
+    <string name="llapp">"Applications of linked list in computer science:\n 1.Implementation of stacks and queues 2.Implementation of graphs: Adjacency list representation of graphs is the most popular which uses a linked list to store adjacent vertices. 3.Dynamic memory allocation: We use a linked list of free blocks. 4.Maintaining a directory of names 5.Performing arithmetic operations on long integers 6.Manipulation of polynomials by storing constants in the node of the linked list 7.Representing sparse matrices "</string>
+    <string name="llsource"><![CDATA["#include <stdio.h>\n #include <string.h>\n #include <stdlib.h>\n #include <stdbool.h>\n  struct node {\n    int data;\n    int key;\n    struct node *next;\n };\n  struct node *head = NULL;\n struct node *current = NULL;\n  //display the list\n void printList() {\n    struct node *ptr = head;\n    printf(\"\n[ \");\n \t    //start from the beginning\n    while(ptr != NULL) {\n       printf(\"(%d,%d) \",ptr->key,ptr->data);\n       ptr = ptr->next;\n    }\n \t    printf(\" ]\");\n }\n  //insert link at the first location\n void insertFirst(int key, int data) {\n    //create a link\n    struct node *link = (struct node*) malloc(sizeof(struct node));\n \t    link->key = key;\n    link->data = data;\n \t    //point it to old first node\n    link->next = head;\n \t    //point first to new first node    head = link;\n }  //delete first item struct node* deleteFirst() {\n     //save reference to first link    struct node *tempLink = head;\n \t    //mark next to first link as first     head = head->next;\n \t    //return the deleted link    return tempLink;\n }\n  //is list empty bool isEmpty() {\n    return head == NULL;\n }\n  int length() {\n    int length = 0;\n    struct node *current;\n \t    for(current = head; current != NULL; current = current->next) {\n       length++;\n    }\n \t    return length;\n }\n  //find a link with given key struct node* find(int key) {\n     //start from the first link    struct node* current = head;\n     //if list is empty    if(head == NULL) {\n       return NULL;\n    }     //navigate through list    while(current->key != key) {\n \t       //if it is last node       if(current->next == NULL) {\n          return NULL;\n       } else {\n          //go to next link          current = current->next;\n       }\n    }\n       \t    //if data found, return the current Link    return current;\n }\n  //delete a link with given key struct node* delete(int key) {\n     //start from the first link    struct node* current = head;\n    struct node* previous = NULL;\n \t    //if list is empty    if(head == NULL) {\n       return NULL;\n    }\n     //navigate through list    while(current->key != key) {\n        //if it is last node       if(current->next == NULL) {\n          return NULL;\n       } else {\n          //store reference to current link          previous = current;\n          //move to next link\n          current = current->next;\n       }\n    }\n     //found a match, update the link    if(current == head) {\n       //change first to point to next link       head = head->next;\n    } else {\n       //bypass the current link       previous->next = current->next;\n    } \n    \t    return current;\n }\n  void sort() {\n     int i, j, k, tempKey, tempData;\n    struct node *current;\n    struct node *next;\n \t    int size = length();\n    k = size ;\n \t    for ( i = 0 ; i < size - 1 ; i++, k-- ) {\n       current = head;\n       next = head->next;\n \t\t       for ( j = 1 ; j < k ; j++ ) {\n              if ( current->data > next->data ) {\n             tempData = current->data;\n             current->data = next->data;\n             next->data = tempData;\n              tempKey = current->key;\n             current->key = next->key;\n             next->key = tempKey;\n          }\n \t\t\t          current = current->next;\n          next = next->next;\n       }\n    }\n  }\n  void reverse(struct node** head_ref) {\n    struct node* prev   = NULL;\n    struct node* current = *head_ref;\n    struct node* next;\n \t    while (current != NULL) {\n       next  = current->next;\n       current->next = prev; \n         prev = current;\n       current = next;\n    }\n \t    *head_ref = prev;\n }\n  void main() {\n    insertFirst(1,10);\n    insertFirst(2,20);\n    insertFirst(3,30);\n    insertFirst(4,1);\n    insertFirst(5,40);\n    insertFirst(6,56); \n     printf(\"Original List: \");\n  \t    //print list    printList();\n     while(!isEmpty()) {\n                   struct node *temp = deleteFirst();\n       printf(\"\nDeleted value:\");\n       printf(\"(%d,%d) \",temp->key,temp->data);\n    }  \n \t    printf(\"\nList after deleting all items: \");\n    printList();\n    insertFirst(1,10);\n    insertFirst(2,20);\n    insertFirst(3,30);\n    insertFirst(4,1);\n    insertFirst(5,40);\n    insertFirst(6,56);\n        printf(\"\nRestored List: \");\n    printList();\n    printf(\"\n\"); \n      struct node *foundLink = find(4);\n \t    if(foundLink != NULL) {\n       printf(\"Element found: \");\n       printf(\"(%d,%d) \",foundLink->key,foundLink->data);\n       printf(\"\n\");  \n    } else {\n       printf(\"Element not found.\");\n    }\n     delete(4);\n    printf(\"List after deleting an item: \");\n    printList();\n    printf(\"\n\");\n    foundLink = find(4);\n \t    if(foundLink != NULL) {\n       printf(\"Element found: \");\n       printf(\"(%d,%d) \",foundLink->key,foundLink->data);\n       printf(\"\n\");\n    } else {\n       printf(\"Element not found.\");\n    }\n \t    printf(\"\n\");\n    sort();\n \t    printf(\"List after sorting the data: \");\n    printList();\n \t    reverse(&head);\n    printf(\"\nList after reversing the data: \");\n    printList();\n }\n If we compile and run the above program, it will produce the following result −\n  Output:\n Original List:  [ (6,56) (5,40) (4,1) (3,30) (2,20) (1,10) ]\n Deleted value:(6,56) \n Deleted value:(5,40) \n Deleted value:(4,1) \n Deleted value:(3,30) \n Deleted value:(2,20) \n Deleted value:(1,10) \n List after deleting all items: \n [ ]\n Restored List: \n [ (6,56) (5,40) (4,1) (3,30) (2,20) (1,10) ]\n Element found: (4,1) \n List after deleting an item: \n [ (6,56) (5,40) (3,30) (2,20) (1,10) ]\n Element not found.\n List after sorting the data: \n [ (1,10) (2,20) (3,30) (5,40) (6,56) ]\n List after reversing the data: \n [ (6,56) (5,40) (3,30) (2,20) (1,10) ]\n "]]></string>
+
+
+    <string name="stacks">A stack is a linear data structure, a collection of items of the same type. In a stack, the insertion and deletion of elements happen only at one endpoint. The behavior of a stack is described as “Last In, First Out” (LIFO).</string>
+    <string name="stackopr">"The following are the basic operations served by stacks:\n  1.push: Adds an element to the top of the stack.\n 2.pop: Removes the topmost element from the stack.\n 3.isEmpty: Checks whether the stack is empty.\n 4.isFull: Checks whether the stack is full.\n 5.top: Displays the topmost element of the stack.\n "</string>
+    <string name="stackapp">"1.A Stack can be used for evaluating expressions consisting of operands and operators.\n 2.Stacks can be used for Backtracking, i.e., to check parenthesis matching in an expression.\n 3.It can also be used to convert one form of expression to another form.\n 4.It can be used for systematic Memory Management.\n "</string>
+    <string name="stackcode"><![CDATA[This example implements stacks using arrays in C:\n  #include <stdio.h>\n  #include <stdlib.h>\n  #define SIZE 4\n  int top = -1, inp_array[SIZE];\n void push();\n void pop();\n void show();\n  int main()\n {\n     int choice;\n      while (1)\n     {\n         printf(\"\nPerform operations on the stack:\");\n         printf(\"\n1.Push the element\n2.Pop the element\n3.Show\n4.End\");\n         printf(\"\n\nEnter the choice: \");\n         scanf(\"%d\", &choice);\n          switch (choice)\n         {\n         case 1:\n             push();\n             break;\n         case 2:\n             pop();\n             break;\n         case 3:\n             show();\n             break;\n         case 4:\n             exit(0);\n          default:\n             printf(\"\nInvalid choice!!\");\n         }\n     }\n }\n  void push()\n {\n     int x;\n      if (top == SIZE - 1)\n     {\n         printf(\"\nOverflow!!\");\n     }\n     else\n     {\n         printf(\"\nEnter the element to be added onto the stack: \");\n         scanf(\"%d\", &x);\n         top = top + 1;\n         inp_array[top] = x;\n     }\n }\n  void pop()\n {\n     if (top == -1)\n     {\n         printf(\"\nUnderflow!!\");\n     }\n     else\n     {\n         printf(\"\nPopped element: %d\", inp_array[top]);\n         top = top - 1;\n     }\n }\n  void show\n {\n     if (top == -1)\n     {\n         printf(\"\nUnderflow!!\");\n     }\n     else\n     {\n         printf(\"\nElements present in the stack: \n\");\n         for (int i = top; i >= 0; --i)\n             printf(\"%d\n\", inp_array[i]);\n     }\n }\n  output:\n Execute this code to push() the number \"10\"onto the stack:\n  Output:\n Perform operations on the stack:\n 1.Push the element\n 2.Pop the element\n 3.Show\n 4.End\n Enter the choice: 1\n  Enter the element to be inserted onto the stack: 10\n Then show() the elements on the stack:\n  Output\n Perform operations on the stack:\n 1.Push the element\n 2.Pop the element\n 3.Show\n 4.End\n  Enter the choice: 3\n  Elements present in the stack:\n  10\n Then pop():\n  Output\n Perform operations on the stack:\n 1.Push the element\n 2.Pop the element\n 3.Show\n 4.End\n  Enter the choice: 2\n Popped element: 10\n Now, the stack is empty. Attempt to pop() again:\n  Output\n Perform operations on the stack:\n 1.Push the element\n 2.Pop the element\n 3.Show\n 4.End\n  Enter the choice: 3\n Underflow!!\n]]></string>
+    <string name="Queue">"A queue in C is basically a linear data structure to store and manipulate the data elements. It follows the order of First In First Out (FIFO). In queues, the first element entered into the array is the first element to be removed from the array. "</string>
+    <string name="queueopr">A queue being an Abstract Data Structure provides the following operations for manipulation on the data elements:\n  1.isEmpty(): To check if the queue is empty\n 2.isFull(): To check whether the queue is full or not\n 3.dequeue(): Removes the element from the frontal side of the queue\n 4.enqueue(): It inserts elements to the end of the queue\n 5.Front: Pointer element responsible for fetching the first element from the queue\n 6.Rear: Pointer element responsible for fetching the last element from the queue\n</string>
+    <string name="queueapp">"1.Managing requests on a single shared resource such as CPU scheduling and disk scheduling.\n 2.Handling hardware or real-time systems interrupts.\n 3.Handling website traffic.\n 4.0Routers and switches in networking.\n 5.Maintaining the playlist in media players.\n "</string>
+    <string name="queuesource"><![CDATA[Implementation of the queue data structure using array\n Example\n  /*\n  * Program  : Queue data structure using array\n  * Language : C\n  */\n  #include<stdio.h>\n  //size of the queue\n #define size 5\n  int arr[size];\n  /*\n  * intialize front and rear as 0\n  * which indicates that the queue is empty initially.\n  */\n int front  = 0;\n int rear   = 0;\n  /*\n  * It will check whether the queue is empty or not\n  * return 1, if the queue is empty\n  * return -1, otherwise\n  */\n int isQueueEmpty()\n {\n    if(front == rear)\n        return 1;\n    return -1;\n }\n  //removes the current beginning element from the queue.\n void dequeue()\n {\n    if(isQueueEmpty() == 1)\n        printf(\"Queue is Empty.\n\");\n    else\n    {\n        printf(\"Dequeued element = %d\n\",arr[front]);\n        front++;\n    }\n }\n  /*\n  * It will check whether the queue if full or not\n  * return 1, if the queue is full\n  * return -1, otherwise\n  */\n int isQueueFull()\n {\n    if(rear == size)\n        return 1;\n    return -1;\n }\n  //adds element at the end of the queue\n void enqueue(int val)\n {\n    if(isQueueFull() == 1)\n        printf(\"Queue is Full\n\");\n    else\n    {\n        arr[rear] = val;\n        rear++;\n    }\n }\n  int main()\n {\n    enqueue(10);\n    enqueue(20);\n    enqueue(30);\n    enqueue(40);\n    enqueue(50);\n    enqueue(60);   //Can\'t insert 60 as the queue is full.\n    dequeue();      //10\n    dequeue();      //20\n    dequeue();      //30\n    dequeue();      //40\n    dequeue();      //50\n    dequeue();      //can\'t dequeue as the queue is empty\n     return 0;\n }\n Output:\n Queue is Full\n Dequeued element = 10\n Dequeued element = 20\n Dequeued element = 30\n Dequeued element = 40\n Dequeued element = 50\n Queue is Empty.\n]]></string>
+
+    <string name="hashing">"Hashing in the data structure is a technique of mapping a large chunk of data into small tables using a hashing function. It is also known as the message digest function. It is a technique that uniquely identifies a specific item from a collection of similar items. "</string>
+    <string name="hashopr">"Hashing is a technique or process of mapping keys, and values into the hash table by using a hash function. It is done for faster access to elements. The efficiency of mapping depends on the efficiency of the hash function used. Let a hash function H(x) maps the value x at the index x%10 in an Array. "</string>
+    <string name="hashapp">1.Message Digest\n 2.Password Verification\n 3.Data Structures(Programming Languages)\n 4.Compiler Operation\n 5.Rabin-Karp Algorithm\n 6.Linking File name and path together\n 7.Game Boards\n 8.Graphics\n</string>
+    <string name="hashsource"><![CDATA[#include <stdio.h>\n #include <string.h>\n #include <stdlib.h>\n #include <stdbool.h>\n  #define SIZE 20\n  struct DataItem {\n    int data;   \n    int key;\n };\n  struct DataItem* hashArray[SIZE]; \n struct DataItem* dummyItem;\n struct DataItem* item;\n  int hashCode(int key) {\n    return key % SIZE;\n }\n  struct DataItem *search(int key) {\n    //get the hash \n    int hashIndex = hashCode(key);\n \t    //move in array until an empty \n    while(hashArray[hashIndex] != NULL) {\n \t       if(hashArray[hashIndex]->key == key)\n          return hashArray[hashIndex]; \n \t\t\t       //go to next cell\n       ++hashIndex;\n \t\t       //wrap around the table\n       hashIndex %= SIZE;\n    }\n         \t    return NULL; \n        }\n  void insert(int key,int data) {\n     struct DataItem *item = (struct DataItem*) malloc(sizeof(struct DataItem));\n    item->data = data;\n      item->key = key;\n     //get the hash \n    int hashIndex = hashCode(key);\n     //move in array until an empty or deleted cell\n    while(hashArray[hashIndex] != NULL && hashArray[hashIndex]->key != -1) {\n       //go to next cell\n       ++hashIndex;\n \t\t       //wrap around the table\n       hashIndex %= SIZE;\n    }\n \t    hashArray[hashIndex] = item;\n }\n  struct DataItem* delete(struct DataItem* item) {\n    int key = item->key;\n     //get the hash \n    int hashIndex = hashCode(key);\n     //move in array until an empty\n    while(hashArray[hashIndex] != NULL) {\n \t       if(hashArray[hashIndex]->key == key) {\n          struct DataItem* temp = hashArray[hashIndex]; \n \t\t\t          //assign a dummy item at deleted position\n          hashArray[hashIndex] = dummyItem; \n          return temp;\n       }\n \t\t       //go to next cell\n       ++hashIndex;\n \t\t       //wrap around the table\n       hashIndex %= SIZE;\n    } \n      \t    return NULL;\n   }\n  void display() {\n    int i = 0;\n \t    for(i = 0; i<SIZE; i++) {\n \t       if(hashArray[i] != NULL)\n          printf(\" (%d,%d)\",hashArray[i]->key,hashArray[i]->data);\n       else\n          printf(\" ~~ \");\n    }\n \t    printf(\"\n\");\n }\n  int main() {\n    dummyItem = (struct DataItem*) malloc(sizeof(struct DataItem));\n    dummyItem->data = -1; \n     dummyItem->key = -1;\n      insert(1, 20);\n    insert(2, 70);\n    insert(42, 80);\n    insert(4, 25);\n    insert(12, 44);\n    insert(14, 32);\n    insert(17, 11);\n    insert(13, 78);\n    insert(37, 97);\n     display();\n    item = search(37);\n     if(item != NULL) {\n       printf(\"Element found: %d\n\", item->data);\n    } else {\n       printf(\"Element not found\n\");\n    }\n     delete(item);\n    item = search(37);\n     if(item != NULL) {\n       printf(\"Element found: %d\n\", item->data);\n    } else {\n       printf(\"Element not found\n\");\n    }\n }\n If we compile and run the above program, it will produce the following result −\n  Output\n  ~~  (1,20)  (2,70)  (42,80)  (4,25)  ~~  ~~  ~~  ~~  ~~  ~~  ~~ (12,44)  (13,78)  (14,32)  ~~  ~~  (17,11)  (37,97)  ~~ \n Element found: 97\n Element not found\n]]>
+    </string>
+    <string name="Trees">"Tree in C is the non-linear(hierarchical) data structure, that consists of nodes connected by edges. The binary tree in C is a special type of tree in which the parent node can have a maximum of two children nodes, i.e. it can have 0, 1, or 2 children node(s). "</string>
+    <string name="treesoper">"Basic Terminologies In Tree Data Structure:\n 1.Parent Node: The node which is a predecessor of a node is called the parent node of that node. {B} is the parent node of {D, E}.\n 2.Child Node: The node which is the immediate successor of a node is called the child node of that node. Examples: {D, E} are the child nodes of {B}.\n 3.Root Node: The topmost node of a tree or the node which does not have any parent node is called the root node. {A} is the root node of the tree. A non-empty tree must contain exactly one root node and exactly one path from the root to all other nodes of the tree.\n 4.Leaf Node or External Node: The nodes which do not have any child nodes are called leaf nodes. {K, L, M, N, O, P} are the leaf nodes of the tree.\n 5.Ancestor of a Node: Any predecessor nodes on the path of the root to that node are called Ancestors of that node. {A,B} are the ancestor nodes of the node {E}\n 6.Descendant: Any successor node on the path from the leaf node to that node. {E,I} are the descendants of the node {B}.\n 7.Sibling: Children of the same parent node are called siblings. {D,E} are called siblings.\n 8.Level of a node: The count of edges on the path from the root node to that node. The root node has level 0.\n 9.Internal node: A node with at least one child is called Internal Node.\n 10.Neighbour of a Node: Parent or child nodes of that node are called neighbors of that node.\n 11.Subtree: Any node of the tree along with its descendant.\n "</string>
+    <string name="treesapp">Applications of Trees:\n  1.Trees can be used to store data which are in hierarchical form.\n 2.Different types of trees are used in various fields like in databases, computer graphics, computer networks.\n 3.Tree data structure are used by operating system to manage file directory.\n   Real-Time Applications of Tree :\n 1.Databases use tree data structure for indexing.\n 2.Tree data structure is used in file directory management.\n 3.DNS uses tree data structure.\n 4.Trees are used in several games like moves in chess.\n 5.Decision based algorithms in machine learning uses tree algorithms.\n</string>
+    <string name="treessource"><![CDATA[// C++ program to demonstrate some of the above\n // terminologies\n #include <bits/stdc++.h>\n using namespace std;\n // Function to add an edge between vertices x and y\n void addEdge(int x, int y, vector<vector<int> >& adj)\n {\n     adj[x].push_back(y);\n     adj[y].push_back(x);\n }\n // Function to print the parent of each node\n void printParents(int node, vector<vector<int> >& adj,\n                   int parent)\n {     // current node is Root, thus, has no parent\n     if (parent == 0)\n         cout << node << \"->Root\" << endl;\n     else\n         cout << node << \"->\" << parent << endl;\n     // Using DFS\n     for (auto cur : adj[node])\n         if (cur != parent)\n             printParents(cur, adj, node);\n }\n // Function to print the children of each node\n void printChildren(int Root, vector<vector<int> >& adj)\n {\n     // Queue for the BFS\n     queue<int> q;\n     // pushing the root\n     q.push(Root);\n     // visit array to keep track of nodes that have been\n     // visited\n     int vis[adj.size()] = { 0 };\n     // BFS\n     while (!q.empty()) {\n         int node = q.front();\n         q.pop();\n         vis[node] = 1;\n         cout << node << \"-> \";\n         for (auto cur : adj[node])\n             if (vis[cur] == 0) {\n                 cout << cur << \" \";\n                 q.push(cur);\n             }\n         cout << endl;\n     }\n }\n // Function to print the leaf nodes\n void printLeafNodes(int Root, vector<vector<int> >& adj)\n {\n     // Leaf nodes have only one edge and are not the root\n     for (int i = 1; i < adj.size(); i++)\n         if (adj[i].size() == 1 && i != Root)\n             cout << i << \" \";\n     cout << endl;\n }\n // Function to print the degrees of each node\n void printDegrees(int Root, vector<vector<int> >& adj)\n {\n     for (int i = 1; i < adj.size(); i++) {\n         cout << i << \": \";\n         // Root has no parent, thus, its degree is equal to\n         // the edges it is connected to\n         if (i == Root)\n             cout << adj[i].size() << endl;\n         else\n             cout << adj[i].size() - 1 << endl;\n     }\n }\n // Driver code\n int main()\n {     // Number of nodes\n     int N = 7, Root = 1;\n     // Adjacency list to store the tree\n     vector<vector<int> > adj(N + 1, vector<int>());\n     // Creating the tree\n     addEdge(1, 2, adj);\n     addEdge(1, 3, adj);\n     addEdge(1, 4, adj);\n     addEdge(2, 5, adj);\n     addEdge(2, 6, adj);\n     addEdge(4, 7, adj);\n     // Printing the parents of each node\n     cout << \"The parents of each node are:\" << endl;\n     printParents(Root, adj, 0);\n       // Printing the children of each node\n     cout << \"The children of each node are:\" << endl;\n     printChildren(Root, adj);\n       // Printing the leaf nodes in the tree\n     cout << \"The leaf nodes of the tree are:\" << endl;\n     printLeafNodes(Root, adj);\n       // Printing the degrees of each node\n     cout << \"The degrees of each node are:\" << endl;\n     printDegrees(Root, adj);\n       return 0;\n }\n Output\n The parents of each node are:\n 1->Root\n 2->1\n 5->2\n 6->2\n 3->1\n 4->1\n 7->4\n The children of each node are:\n 1-> 2 3 4 \n 2-> 5 6 \n 3-> \n 4-> 7 \n 5-> \n 6-> \n 7-> \n The leaf nodes of the tree are:\n 3 5 6 7 \n The degrees of each node are:\n 1: 3\n 2: 2\n 3: 0\n 4: 1\n 5: 0\n 6: 0\n 7: 0\n]]>
+    </string>
+    <string name="merge"> <b>Merge sort</b>\nLike QuickSort, Merge Sort is a Divide and Conquer algorithm. It divides the input array into two halves, calls itself for the two halves, and then it merges the two sorted halves. The merge() function is used for merging two halves. The merge(arr, l, m, r) is a key process that assumes that arr[l..m] and arr[m+1..r]are sorted and merges the two sorted sub-arrays into one. \n\n
+</string>
+    <string name="mergealgo"><b> Algorithm:</b> \nStep 1: Start\nStep 2: Declare an array and left, right, mid variable\nStep 3: Perform merge function.\nmergesort(array,left,right)\nmergesort (array, left, right)\nif left > right\nreturn\nmid= (left+right)/2\nmergesort(array, left, mid)\nmergesort(array, mid+1, right)\nmerge(array, left, mid, right)\nStep 4: Stop\n
+    </string>
+    <string name="mergesource">
+    #include &lt;stdio.h>\n
+    #include &lt;stdlib.h>\n
+
+    // Merges two subarrays of arr[].\n
+    // First subarray is arr[l..m]\n
+    // Second subarray is arr[m+1..r]\n
+    void merge(int arr[], int l,\n
+    int m, int r)\n
+    {\n
+    int i, j, k;\n
+    int n1 = m - l + 1;\n
+    int n2 = r - m;\n
+
+    // Create temp arrays\n
+    int L[n1], R[n2];\n
+
+    // Copy data to temp arrays\n
+    // L[] and R[]\n
+    for (i = 0; i &lt; n1; i++)\n
+    L[i] = arr[l + i];\n
+    for (j = 0; j 7lt; n2; j++)\n
+    R[j] = arr[m + 1 + j];\n
+
+    // Merge the temp arrays back\n
+    // into arr[l..r]\n
+    // Initial index of first subarray\n
+    i = 0;\n
+
+    // Initial index of second subarray\n
+    j = 0;\n
+
+    // Initial index of merged subarray\n
+    k = l;\n
+    while (i &lt; n1 &amp;&amp; j &lt; n2)\n
+    {\n
+    if (L[i] &lt;= R[j])\n
+    {\n
+    arr[k] = L[i];\n
+    i++;\n
+    }\n
+    else\n
+    {\n
+    arr[k] = R[j];\n
+    j++;\n
+    }\n
+    k++;\n
+    }\n
+
+    // Copy the remaining elements of L[], if there are any\n
+    while (i &lt;n1) {\n
+    arr[k] = L[i];\n
+    i++;\n
+    k++;\n
+    }\n
+
+    // Copy the remaining elements of R[], if there are any\n
+    while (j &lt; n2)\n
+    {\n
+    arr[k] = R[j];\n
+    j++;\n
+    k++;\n
+    }\n
+
+    }\n
+
+    // l is for left index and r is right index of the sub-array of arr to be sorted\n
+    void mergeSort(int arr[], int l, int r)\n
+    {\n
+    if (l &lt; r)\n
+    {\n
+    // Same as (l+r)/2, but avoids\n
+    // overflow for large l and h\n
+    int m = l + (r - l) / 2;\n
+
+    // Sort first and second halves\n
+    mergeSort(arr, l, m);\n
+    mergeSort(arr, m + 1, r);\nmerge(arr, l, m, r);\n
+    }\n
+    }\n
+    // Function to print an array\n
+    void printArray(int A[], int size)\n
+    {\n
+    int i;\n
+    for (i = 0; i &lt;size; i++)\n
+    printf("%d ", A[i]);\n
+    printf("\n");\n
+    }\n
+    int main()\n
+    {\n
+    int arr[] = {12, 11, 13, 5, 6, 7};\n
+    int arr_size = sizeof(arr) / sizeof(arr[0]);\n
+
+    printf("Given array is \n");\n
+    printArray(arr, arr_size);\n
+
+    mergeSort(arr, 0, arr_size - 1);\n
+
+    printf("\nSorted array is \n");\n
+    printArray(arr, arr_size);\n
+    return 0;\n
+    }
+</string>
+    <string name="ss"><b>SELECTION SORT:</b>\n
+Selection sort is a simple and efficient sorting algorithm that works by repeatedly selecting the smallest (or largest) element
+        from the unsorted portion of the list and moving it to the sorted portion of the list. The algorithm repeatedly selects
+        the smallest (or largest) element from the unsorted portion of the list and swaps it with the first element of the unsorted
+        portion. This process is repeated for the remaining unsorted portion of the list until the entire list is sorted.
+    </string>
+    <string name="ssslgo">1.Initialize minimum value(min_idx) to location 0.\n2.Traverse the array to find the minimum element in the array.\n3.While traversing if any element smaller than min_idx is found then swap both the values.\n4.Then, increment min_idx to point to the next element.\n5.Repeat until the array is sorted.\n\n
+    </string>
+    <string name="sscode">#include &lt;stdio.h&gt;\n
+
+void swap(int *xp, int *yp) \n
+{\n
+	int temp = *xp;\n
+	*xp = *yp;\n
+	*yp = temp;\n
+}\n
+
+void selectionSort(int arr[], int n)\n
+{\n
+	int i, j, min_idx; \n
+
+	// One by one move boundary of unsorted subarray\n
+	for (i = 0; i &lt; n-1; i++)\n
+	{\n
+		// Find the minimum element in unsorted array\n
+		min_idx = i;\n
+		for (j = i+1; j &lt; n; j++)\n
+		if (arr[j] &lt; arr[min_idx])\n
+			min_idx = j;\n
+
+		// Swap the found minimum element with the first element\n
+		if(min_idx != i)\n
+			swap(&amp;arr[min_idx], &amp;arr[i]);\n
+	}\n
+}\n
+
+/* Function to print an array */\n
+void printArray(int arr[], int size)\n
+{\n
+	int i;\n
+	for (i=0; i &lt; size; i++)\n
+		printf("%d ", arr[i]);\n
+	printf("\n");\n
+}\n
+int main()\n
+{\n
+	int arr[] = {64, 25, 12, 22, 11};\n
+	int n = sizeof(arr)/sizeof(arr[0]);\n
+	selectionSort(arr, n);\n
+	printf("Sorted array: \n");\n
+	printArray(arr, n);\n
+	return 0;\n
+}\n\n</string>
+    <string name="ssapp">1.Simple and easy to understand.\n
+2.Preserves the relative order of items with equal keys which means it is stable.\n
+3.Works well with small datasets.</string>
+    <string name="insertion">Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your hands.\n
+        The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and\n
+        placed at the correct position in the sorted part.
+    </string>
+    <string name="instalgo">Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your hands.\n
+        The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and\n
+        placed at the correct position in the sorted part.</string>
+    <string name="instcode">#include &lt;math.h &gt;\n
+#include &lt; stdio.h &gt;\n
+
+/* Function to sort an array\n
+using insertion sort*/\n
+void insertionSort(int arr[], int n)\n
+{\n
+	int i, key, j;\n
+	for (i = 1; i &lt;n; i++)\n
+	{\n
+		key = arr[i];\n
+		j = i - 1;\n
+
+		/* Move elements of arr[0..i-1],
+		that are greater than key,
+		to one position ahead of
+		their current position */\n
+		while (j >= 0 &amp;&amp; arr[j] > key)\n
+		{\n
+			arr[j + 1] = arr[j];\n
+			j = j - 1;\n
+		}\n
+		arr[j + 1] = key;\n
+	}\n
+}\n
+
+// A utility function to print\n
+// an array of size n\n
+void printArray(int arr[], int n)\n
+{\n
+	int i;\n
+	for (i = 0; i &lt; n; i++)\n
+		printf("%d ", arr[i]);\n
+	printf("\n");\n
+}\n
+
+// Driver code\n
+int main()\n
+{\n
+	int arr[] = {12, 11, 13, 5, 6};\n
+	int n = sizeof(arr) / sizeof(arr[0]);\n
+
+	insertionSort(arr, n);\n
+	printArray(arr, n);\n
+
+	return 0;\n
+}\n
+
+</string>
+    <string name="set"><![CDATA[In the C programming language, the character set refers to a set of all the valid characters that we can use in the source program for forming words, expressions, and numbers.  The source character set contains all the characters that we want to use for the source program text. On the other hand, the execution character set consists of the set of those characters that we might use during the execution of any program. Thus, it is not a prerequisite that the execution character set and the source character set will be the same, or they will match altogether.  Use of Character Set in C\n Just like we use a set of various words, numbers, statements, etc., in any language for communication, the C programming language also consists of a set of various different types of characters. These are known as the characters in C. They include digits, alphabets, special symbols, etc. The C language provides support for about 256 characters.  Every program that we draft for the C program consists of various statements. We use words for constructing these statements. Meanwhile, we use characters for constructing these statements. These characters must be from the C language character set. Let us look at the set of characters offered by the C language.   Types of Characters in C\n The C programming language provides support for the following types of characters. In other words, these are the valid characters that we can use in the C language:\n  Digits\n Alphabets\n Main Characters\n All of these serve a different set of purposes, and we use them in different contexts in the C language.\n   Alphabets\n The C programming language provides support for all the alphabets that we use in the English language. Thus, in simpler words, a C program would easily support a total of 52 different characters- 26 uppercase and 26 lowercase.  Type of Character\tDescription\tCharacters\n Lowercase Alphabets\ta to z\ta, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z\n Uppercase Alphabets\tA to Z\tA, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z\n  Digits\n The C programming language provides the support for all the digits that help in constructing/ supporting the numeric values or expressions in a program. These range from 0 to 9, and also help in defining an identifier. Thus, the C language supports a total of 10 digits for constructing the numeric values or expressions in any program.  Type of Character\tDescription\tCharacters\n Digits\t0 to 9\t0, 1, 2, 3, 4, 5, 6, 7, 8, 9\n  Special Characters\n We use some special characters in the C language for some special purposes, such as logical operations, mathematical operations, checking of conditions, backspaces, white spaces, etc.  We can also use these characters for defining the identifiers in a much better way. For instance, we use underscores for constructing a longer name for a variable, etc.\n  The C programming language provides support for the following types of special characters:\n  Type of Character\tExamples\n Special Characters\t` ~ @ ! $ # ^ * % & ( ) [ ] { } < > + = _ – | /  ; : ‘ “ , . ?\n  White Spaces\n The white spaces in the C programming language contain the following:\n  Blank Spaces\n Carriage Return\n Tab\n New Line\n  Summary of Special Characters in C\n Here is a table that represents all the types of character sets that we can use in the C language:\n  Type of Character\tDescription\tCharacters\n Lowercase Alphabets\ta to z\ta, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z\n Uppercase Alphabets\tA to Z\tA, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z\n Digits\t0 to 9\t0, 1, 2, 3, 4, 5, 6, 7, 8, 9\n Special Characters\t–\t` ~ @ ! $ # ^ * % & ( ) [ ] { } < > + = _ – | /  ; : ‘ “ , . ?\n White Spaces\t–\tBlank Spaces, Carriage Return, Tab, New Line\n]]></string>
+    <string name="variables">" In C, there are different types of variables (defined with different keywords), for example:\n  int - stores integers (whole numbers), without decimals, such as 123 or -123\n float - stores floating point numbers, with decimals, such as 19.99 or -19.99\n char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes\n "</string>
+    <string name="Keywords">Keywords are words that have special meaning to the C compiler. In translation phases 7 and 8, an identifier can\'t have the same spelling and case as a C keyword. For more information, see translation phases in the Preprocessor Reference. For more information on identifiers, see Identifiers.\n  Standard C keywords\n The C language uses the following keywords:\n  auto\n break\n case\n char\n const\n continue\n default\n do\n double\n else\n enum\n  extern\n float\n for\n goto\n if\n inline 1, a\n int\n long\n register\n restrict 1, a\n return\n  short\n signed\n sizeof\n static\n struct\n switch\n typedef\n union\n unsigned\n void\n volatile\n</string>
+    <string name="Identifiers">" \"Identifiers\" or \"symbols\" are the names you supply for variables, types, functions, and labels in your program. Identifier names must differ in spelling and case from any keywords. You can't use keywords (either C or Microsoft) as identifiers; they're reserved for special use. You create an identifier by specifying it in the declaration of a variable, type, or function. In this example, result is an identifier for an integer variable, and main and printf are identifier names for functions.  Once declared, you can use the identifier in later program statements to refer to the associated value.\n  A special variety of identifier, called a statement label, can be used in goto statements. (Declarations are described in Declarations and Types Statement labels are described in The goto and Labeled Statements.)\n "</string>
+    <string name="lsalgo">Linear Search Algorithm\nStep 1: First, read the search element (Target element) in the array.\nStep 2: In the second step compare the search element with the first element in the array.\nStep 3: If both are matched, display “Target element is found” and terminate the Linear Search function.\nStep 4: If both are not matched, compare the search element with the next element in the array.\nStep 5: In this step, repeat steps 3 and 4 until the search (Target) element is compared with the last element of the array.\nStep 6 – If the last element in the list does not match, the Linear Search Function will be terminated, and the message “Element is not found” will be displayed.\n</string>
+    <string name="linearsrch">a linear search or sequential search is a method for finding an element within a list. It sequentially checks each element of the list until a match is found or the whole list has been searched.\n</string>
+    <string name="lswork">Input: arr[] = {10, 20, 80, 30, 60, 50,110, 100, 130, 170}, x = 110;\nOutput: 6 \nExplanation: Element x is present at index 6 \n</string>
+    <string name="lscode"><![CDATA[#include <stdio.h> /n int search(int array[], int n, int x) {\n// Going through array sequencially\nfor (int i = 0; i < n; i++)\nif (array[i] == x)\return i;\nreturn -1;\n}\nint main() {\nint array[] = {2, 4, 0, 1, 9};\nint x = 1; \nint n = sizeof(array) / sizeof(array[0]); \nint result = search(array, n, x); \n(result == -1) ? printf("Element not found") : printf("Element found at index: %d", result);\n}]]> </string>
+    <string name="kruskal_algorithm">KRUSKAL ALGORITHM</string>
+    <string name="paragraph">*Kruskal algorithm is the concept that is introduced in the graph theory of discrete mathematics.\n
+ ->It is used to discover the shortest path between two points in a connected weighted graph.\n
+ ->This algorithm converts a given graph into the forest, considering each node as a separate tree.\n
+->These trees can only link to each other if the edge connecting them has a low value and doesn’t generate a cycle in MST structure.
+ *Introduction to Kruskal Algorithm.\n
+ The Kruskal algorithm is used to generate a minimum spanning tree for a given graph.\n
+ But,what exactly is a minimum spanning tree...?\n
+ A minimum spanning tree is a subset of a graph with the same number of vertices as the graph and edges equal to the number of vertices -1.\n
+ It also has a minimal cost for the sum of all edge weights in a spanning tree.\n
+ *Creating Minimum Spanning Tree Using Kruskal Algorithm:\n
+->Step 1: Sort all edges in increasing order of their edge weights.\n
+->Step 2: Pick the smallest edge.\n
+->Step 3: Check if the new edge creates a cycle or loop in a spanning tree.\n
+->Step 4: If it doesn’t form the cycle, then include that edge in MST. Otherwise, discard it.\n
+->Step 5: Repeat from step 2 until it includes |V| - 1 edges in MST.
+</string>
+    <string name="paragraph_2">*Implementation of Kruskal Algorithm:\n
+ *The strategy to implement the Kruskal algorithm using Union-Find is given below:\n
+ ->Construct a structure to keep track of the source and destination nodes, as well as their weight.\n
+ ->Sort all the edges of a graph according to their edge-weight values.\n
+ ->Create three distinct sets to maintain nodes of a graph, their hierarchy in a tree, and corresponding ranks for every node.\n
+ ->Primarily, initialize all rank values to 0 and parent values to -1 (representing each node as its own tree itself).\n
+ ->For each insertion of an edge in MST, you will update the rank and parent of each node.\n
+ ->Do not insert the edge connecting two nodes if they have the same parent node, as this will cause a cycle in the tree structure
+
+</string>
+    <string name="about_app1">about app1</string>
+    <string name="basicceg">
+    C "Hello, World!" Program \n
+    C Program to Print an Integer (Entered by the User) \n
+    C Program to Add Two Integers \n
+    C Program to Multiply Two Floating-Point Numbers \n
+    C Program to Find ASCII Value of a Character \n
+    C Program to Compute Quotient and Remainder \n
+    C Program to Find the Size of int, float, double and char \n
+    C Program to Demonstrate the Working of Keyword long \n
+    C Program to Swap Two Numbers \n
+    C Program to Check Whether a Number is Even or Odd \n
+    C Program to Check Whether a Character is a Vowel or Consonant \n
+    C Program to Find the Largest Number Among Three Numbers \n
+    C Program to Find the Roots of a Quadratic Equation \n
+    C Program to Check Leap Year \n
+    C Program to Check Whether a Number is Positive or Negative \n
+    C Program to Check Whether a Character is an Alphabet or not \n
+    C Program to Calculate the Sum of Natural Numbers \n
+    C Program to Find Factorial of a Number \n
+    C Program to Generate Multiplication Table \n
+    C Program to Display Fibonacci Sequence \n
+    C Program to Find GCD of two Numbers \n
+    C Program to Find LCM of two Numbers \n
+    C Program to Display Characters from A to Z Using Loop \n
+    C Program to Count Number of Digits in an Integer \n
+    C Program to Reverse a Number \n
+    C Program to Calculate the Power of a Number \n
+    C Program to Check Whether a Number is Palindrome or Not \n
+    C Program to Check Whether a Number is Prime or Not \n
+    C Program to Display Prime Numbers Between Two Intervals \n
+    C Program to Check Armstrong Number \n
+    C Program to Display Armstrong Number Between Two Intervals \n
+    C Program to Display Factors of a Number \n
+    C Program to Make a Simple Calculator Using switch…case \n
+    C Program to Display Prime Numbers Between Intervals Using Function \n
+    C Program to Check Prime or Armstrong Number Using User-defined Function \n
+    C Program to Check Whether a Number can be Expressed as Sum of Two Prime Numbers \n
+    C Program to Find the Sum of Natural Numbers using Recursion \n
+    C Program to Find Factorial of a Number Using Recursion \n
+    C Program to Find G.C.D Using Recursion \n
+    C Program to Convert Binary Number to Decimal and vice-versa \n
+    C Program to Convert Octal Number to Decimal and vice-versa \n
+    C Program to Convert Binary Number to Octal and vice-versa \n
+    C Program to Reverse a Sentence Using Recursion \n
+    C program to calculate the power using recursion \n
+    </string>
+
+
+    <string name="dseg">
+
+         Find a pair with the given sum in an array \n\n
+ Sort binary array in linear time \n\n
+ Find the maximum product of two integers in an array \n\n
+ Find equilibrium index of an array \n\n
+ Boyer–Moore Majority Vote Algorithm \n\n
+ Move all zeros present in an array to the end \n\n
+ Maximum Sum Subarray Problem (Kadane’s Algorithm) \n\n
+ Sort an array in one swap whose two elements are swapped \n\n
+ Maximum Product Subset Problem \n\n
+ Find pairs with difference k in an array \n\n
+ Find minimum difference between the index of two given elements present in an array \n\n
+ Partition an array into two subarrays with the same sum \n\n
+ Find two numbers with maximum sum formed by array digits \n\n
+ Find the minimum index of a repeating element in an array \n\n
+ Find a pair with a minimum absolute sum in an array \n\n
+        Clone a Linked List\n\n
+ Delete a linked list \n\n
+ Pop operation in a linked list \n\n
+ Insert a node to its correct sorted position in a sorted linked list \n\n
+ Split nodes of a linked list into the front and back halves \n\n
+ Remove duplicates from a sorted linked list \n\n
+ Move the front node of a linked list in front of another list \n\n
+ Construct a linked list by merging alternate nodes of two given lists  \n\n
+ Find k’th node from the end of a linked list \n\n
+ Delete every N nodes in a linked list after skipping M nodes \n\n
+ Move the last node to the front of a linked list \n\n
+ Rearrange linked list in a specific manner \n\n
+         Check if an expression is balanced or not \n\n
+ Evaluate a postfix expression \n\n
+ Implement two stacks in a single array \n\n
+ Reverse a string using a stack data structure \n\n
+ Reverse an array in C++ \n\n
+ Find all elements in an array that are greater than all elements to their right \n\n
+ Reverse a string without using recursion \n\n
+ Check if two binary trees are identical or not \n\n
+ Reverse level order traversal of a binary tree \n\n
+ Construction of an expression tree \n\n
+ Print complete Binary Search Tree (BST) in increasing order \n\n
+ Invert Binary Tree \n\n
+ Find the maximum occurring word in a given set of strings \n\n
+
+</string>
+    <string name="dj1">INTRODUCTION:</string>
+    <string name="dj2">With Dijkstra\'s Algorithm, you can find the shortest path between nodes in a graph. Particularly, you can find the shortest path from a node (called the "source node") to all other nodes in the graph, producing a shortest-path tree.
+
+This algorithm is used in GPS devices to find the shortest path between the current location and the destination. It has broad applications in industry, specially in domains that require modeling networks.\nDijkstra\'s Algorithm finds the shortest path between a given node (which is called the "source node") and all other nodes in a graph.
+This algorithm uses the weights of the edges to find the path that minimizes the total distance (weight) between the source node and all other nodes.</string>
+    <string name="dj3">Algorithm: </string>
+    <string name="dj4">1.Mark the source node with a current distance of 0 and the rest with infinity.
+2.Set the non-visited node with the smallest current distance as the current node, lets say C.
+3.For each neighbour N of the current node C: add the current distance of C with the weight of the edge connecting C-N. If it is smaller than the current distance of N, set it as the new current distance of N.
+4.Mark the current node C as visited.
+5.Go to step 2 if there are any nodes are unvisited.</string>
+    <string name="dj5">pseudocode:</string>
+
+    <string name="d7">APPLICATIONS:</string>
+
+
+    <string name="a1" tools:ignore="DuplicateDefinition">Kruskal\'s algorithm is a minimum spanning tree algorithm that takes a graph as input and finds the subset of the edges of that graph which form a tree that includes every vertex has the minimum sum of weights among all the trees that can be formed from the graph.\n
+ Kruskal algorithm is the concept that is introduced in the graph theory of discrete mathematics.\n
+ ->It is used to discover the shortest path between two points in a connected weighted graph.\n
+ ->This algorithm converts a given graph into the forest, considering each node as a separate tree.\n
+->These trees can only link to each other if the edge connecting them has a low value and doesn’t generate a cycle in MST structure.
+ *Introduction to Kruskal Algorithm.\n
+ The Kruskal algorithm is used to generate a minimum spanning tree for a given graph.\n
+ But,what exactly is a minimum spanning tree…?\n
+ A minimum spanning tree is a subset of a graph with the same number of vertices as the graph and edges equal to the number of vertices -1.\n
+ It also has a minimal cost for the sum of all edge weights in a spanning tree.\n</string>
+    <string name="a2">Steps for Creating Minimum Spanning Tree Using Kruskal Algorithm:\n
+</string>
+    <string name="a3">->Step 1: Sort all edges in increasing order of their edge weights.\n
+->Step 2: Pick the smallest edge.\n
+->Step 3: Check if the new edge creates a cycle or loop in a spanning tree.\n
+->Step 4: If it doesn’t form the cycle, then include that edge in MST. Otherwise, discard it.\n
+->Step 5: Repeat from step 2 until it includes |V| - 1 edges in MST.
+
+</string>
+    <string name="a4">*Implementation of Kruskal Algorithm:\n</string>
+    <string name="a5">*The strategy to implement the Kruskal algorithm using Union-Find is given below:\n
+ ->Construct a structure to keep track of the source and destination nodes, as well as their weight.\n
+ ->Sort all the edges of a graph according to their edge-weight values.\n
+ ->Create three distinct sets to maintain nodes of a graph, their hierarchy in a tree, and corresponding ranks for every node.\n
+ ->Primarily, initialize all rank values to 0 and parent values to -1 (representing each node as its own tree itself).\n
+ ->For each insertion of an edge in MST, you will update the rank and parent of each node.\n
+ ->Do not insert the edge connecting two nodes if they have the same parent node, as this will cause a cycle in the tree structure
+</string>
+    <string name="a6">KRUSKAL(G):
+    A = ∅
+    For each vertex v ∈ G.V:
+        MAKE-SET(v)
+    For each edge (u, v) ∈ G.E ordered by
+        increasing order by weight(u, v):
+        if FIND-SET(u) ≠ FIND-SET(v):
+        A = A ∪ {(u, v)}
+        UNION(u, v)
+    return A</string>
+    <string name="a7">Landing cables.\n TV Network.\nTour Operations.\n LAN Networks.\n A network of pipes for drinking water or natural gas.\n An electric grid.
+Single-link Cluster.</string>
+    <string name="a8">Applications of Kruskal Algorithm are:</string>
+    <string name="b1">BREADTH FIRST SEARCH\nINTRODUCTION:</string>
+    <string name="b2">Breadth-first search is a graph traversal algorithm that starts traversing the graph from the root node and explores all the neighboring nodes.\nit selects the nearest node and explores all the unexplored nodes.\nWhile using BFS for traversal, any node in the graph can be considered as the root node.\nBFS is the most commonly used approach.\nIt is a recursive algorithm to search all the vertices of a tree or graph data structure.\n
+BFS puts every vertex of the graph into two categories:-\n 1:visited\n 2:non-visited.\n It selects a single node in a graph and, after that, visits all the nodes adjacent to the selected node.
+</string>
+    <string name="b3">Algorithm for Breadth First Search:</string>
+    <string name="b4">The steps involved in the BFS algorithm to explore a graph are given as follows:-
+Step 1: SET STATUS = 1 (ready state) for each node in G\n Step 2: Enqueue the starting node A and set its STATUS = 2 (waiting state)\n Step 3: Repeat Steps 4 and 5 until QUEUE is empty\n Step 4: Dequeue a node N. Process it and set its STATUS = 3 (processed state).\n Step 5: Enqueue all the neighbours of N that are in the ready state (whose STATUS = 1) and set their STATUS = 2\n Step 6: EXIT:
+    </string>
+    <string name="b5">Pseudocode to implement the Breadth-First Search Algorithm:
+Input: s as the source node\n BFS (G, s)\nlet Q be queue.\nQ.enqueue( s )\nmark s as visited\n while ( Q is not empty)\n v = Q.dequeue( )\nfor all neighbors w of v in Graph G\n if w is not visited\n Q.enqueue( w )\nmark w as visited</string>
+    <string name="b6">DEPTH FIRST SEARCH\n INTRODUCTION:
+    </string>
+    <string name="b7">Depth First Search (DFS) is an algorithm that is mainly used to traverse the graph data structure.\nThe algorithm starts from an arbitrary node (root node in case of trees) and explore as far as possible in the graph before backtracking.\n After backtracking it repeats the same process for all the remaining vertices which have not been visited till now.\n
+The idea of the depth-first search algorithm is to start from an arbitrary node of the graph and to explore as far as possible before coming back.i.e. moving to an adjacent node until there is no unvisited adjacent node.\n Then backtrack and check for other unvisited nodes and repeat the same process for them.\n
+</string>
+    <string name="b8">Algorithm for DFS[Depth First Search]</string>
+    <string name="b9">1.Create a recursive function that takes arguments as a boolean array\n2.visited of size V and index u denoting the current node (when it will be called initially, u will be 0 or any other user-defined value).\n3.Mark the current node as visited i.e. visited[u]=True.\n4.Print the current node i.e. Print(u)\n5.Search for all the adjacent vertices v, of node u and identify the unvisited ones.As soon as unvisited vertex adjacent to u found make a DFS call with index as v.
+</string>
+    <string name="b10">Pseudocode of DFS Algorithm:
+DFS(visited, u):\n    visited[u]=True\n Print u\n    for each v in adj[u]: \n if(visited[v]=False)\n DFS(visited,v)</string>
+    <string name="pr1">INTRODUCTION:</string>
+    <string name="pr2">*Prim\'s Algorithm is a greedy algorithm that is used to find the minimum spanning tree from a graph.\n Prim\'s algorithm finds the subset of edges that includes every vertex of the graph such that the sum of the weights of the edges can be minimized.
+Prim\'s algorithm starts with the single node and explores all the adjacent nodes with all the connecting edges at every step.\n The edges with the minimal weights causing no cycles in the graph got selected\n
+Prim\'s algorithm is a greedy algorithm that starts from one vertex and continue to add the edges with the smallest weight until the goal is reached.</string>
+    <string name="p1">Steps to implement the prim\'s algorithm are given as follows :-\n
+        1:First, we have to initialize an MST with the randomly chosen vertex.\n2:Now, we have to find all the edges that connect the tree in the above step with the new vertices. From the edges found, select the minimum edge and add it to the tree.\n 3:Repeat step 2 until the minimum spanning tree is formed.\n
+</string>
+    <string name="p2">The applications of prim\'s algorithm are:</string>
+    <string name="p3">->Prim\'s algorithm can be used in network designing.\n ->It can be used to make network cycles.\n ->It can also be used to lay down electrical wiring cables.\n</string>
+    <string name="p4">Algorithm:</string>
+
+    <string name="h1">INTRODUCTION:</string>
+    <string name="h2">Hamiltonian Path in an undirected graph is a path that visits each vertex exactly once.\n A Hamiltonian cycle (or Hamiltonian circuit) is a Hamiltonian Path such that there is an edge (in the graph) from the last vertex to the first vertex of the Hamiltonian Path\n
+Input is the adjacency matrix of a graph G(V, E), where V is the number of Vertices and E is the number of Edges. An adjacency matrix represents the adjacency of two vertices in constant time.\n In Output, we have to Return True (boolean value) along with the path if the graph contains a Hamiltonia\n
+        In an undirected graph, the Hamiltonian path is a path, that visits each vertex exactly once, and the Hamiltonian cycle or circuit is a Hamiltonian path, that there is an edge from the last vertex to the first vertex.</string>
+    <string name="h3">There are 2 ways to solve the Hamilton Cycle Problem
+    1:Navies Algorithm method\n 2:Backtracking method </string>
+    <string name="h4">Approach 1- Naive Algorithm
+In this approach, we will use Dynamic Programming and Bit Masking techniques to check whether there exists a Hamiltonian Cycle or not.
+Algorithm
+1:Initialize a boolean matrix dp[][] having dimension n*2^n, where dp[j][i] represents whether there exists a path for the given subset or not.
+2:For the base case, update dp[i][1 less than i] = true, for i in range [0, N – 1].
+3:Iterate over the range [1,2^n– 1] using and perform the following steps:\n All the vertices with bits set in mask i, are included in the subset.
+4:Iterate over the range [1, N] using the variable j that will represent the end vertex of the hamiltonian path of current subset mask i and perform the following steps:
+5:If the value of i and 2^j is true, then iterate over the range [1, N] using the variable k and if the value of dp[k][i^2^j ] is true, then mark dp[j][i] is true and break out of the loop.
+Otherwise, continue to the next iteration.
+6:Iterate over the range using the variable i and if the value of dp[i][2^n– 1] is true, then there exists a hamiltonian path ending at vertex i.
+</string>
+    <string name="h5">Approach 2- Backtracking
+The optimal Approach for this problem will be to solve it using the concept of backtracking. \n The following algorithm demonstrates the working of the backtracking approach:
+Algorithm:
+1:Create an empty path array and add vertex 0 to it.
+2:Start adding other vertices by checking if they have been added previously or not.
+3:We can check this by creating a visiting array to check if the vertex has already been visited or is adjacent to the previously added vertex.
+4:If any such vertex is found, add it to the path array and backtrack from there.
+5:If no such vertex is found we return False.</string>
+    <string name="q1">INTRODUCTION:</string>
+
+    <string name="q3">Algorithm for N - QUEENS problem:</string>
+    <string name="q4">N - Queens (k, n)
+{
+   For i  ←  1 to n
+        do if Place (k, i) then
+   {
+      x [k]  ←  i;
+      if (k ==n) then
+        write (x [1....n));
+      else
+      N - Queens (k + 1, n);
+   }
+}
+    </string>
+    <string name="q5">Algorithm to Solve the Problem:</string>
+
+
+    <string name="p5">Step 1: Select a starting vertex\n
+Step 2: Repeat Steps 3 and 4 until there are fringe vertices.\n
+Step 3: Select an edge e connecting the tree vertex and fringe vertex that has minimum weight.\n
+Step 4: Add the selected edge and the vertex to the minimum spanning tree T
+[END OF LOOP].\n
+Step 5: EXIT\n</string>
+    <string name="t1">INTRODUCTION:</string>
+    <string name="t2">Travelling Salesman Problem (TSP):\n Given a set of cities and the distance between every pair of cities, the problem is to find the shortest possible route that visits every city exactly once and returns to the starting point.
+    Suppose the cities are x1 x2..... xn where cost cij denotes the cost of travelling from city xi to xj. The travelling salesperson problem is to find a route starting and ending at x1 that will take in all cities with the minimum cost.
+    </string>
+    <string name="t3">There are multiple ways to solve the traveling salesman problem (tsp). Some popular solutions are:\n 1.The brute force approach is the naive method for solving traveling salesman problems. In this approach, we first calculate all possible paths and then compare them. The number of paths in a graph consisting of n cities is n! It is computationally very expensive to solve the traveling salesman problem in this brute force approach.
+2.The branch-and-bound method: The problem is broken down into sub-problems in this approach. The solution of those individual sub-problems would provide an optimal solution.
+3.Dynamic programming is such a method for seeking optimal solutions by analyzing all possible routes. It is one of the exact solution methods that solve traveling salesman problems through relatively higher cost than the greedy methods that provide a near-optimal solution.The computational complexity of this approach is O(N^2 * 2^N) which is discussed later in this article.
+4.The nearest neighbor method is a heuristic-based greedy approach where we choose the nearest neighbor node. This approach is computationally less expensive than the dynamic approach. But it does not provide the guarantee of an optimal solution. This method is used for near-optimal solutions.</string>
+    <string name="t4">ALGORITHM:</string>
+    <string name="t5">We will use the dynamic programming approach to solve the Travelling Salesman Problem (TSP)
+    1.A graph G=(V, E), which is a set of vertices and edges.
+2.V is the set of vertices.
+3.E is the set of edges.
+4.Vertices are connected through edges.
+5.Dist(i,j) denotes the non-negative distance between two vertices, i and j.
+    The dynamic programming algorithm would be:
+1.Set cost(i, , i) = 0, which means we start and end at i, and the cost is 0.
+2.When |S| > 1, we define cost(i, S, 1) = ∝ where i !=1 . Because initially, we do not know the exact cost to reach city i to city 1 through other cities.
+3.Now, we need to start at 1 and complete the tour. We need to select the next city in such a way-
+cost(i, S, j)=min cost (i, S−{i}, j)+dist(i,j) where i∈S and i≠j</string>
+    <string name="t6">Pseudo-code:</string>
+    <string name="t7">
+        >Cost (1, {}, 1) = 0
+>for s = 2 to n do
+   >for all subsets S belongs to {1, 2, 3, … , n} of size s
+      >Cost (s, S, 1) = Infinity
+   >for all i Є S and i ≠ 1
+      >Cost (i, S, j) = min {Cost (i, S – {i}, j) + dist(i, j) for j Є S and i ≠ j}
+>Return min(i) Cost (i, {1, 2, 3, …, n}, j) + d(j, i) </string>
+    <string name="lo">Linearpointer</string>
+    <string name="l_array"><![CDATA[#include<stdio.h>\n int i,l;\n int search(int ,int *,int);\n int main(){\n    int n,m;\n    printf(\"enter the size of array:\");\n    scanf(\"%d\",&n);\n    int a[n];\n    printf(\"enter the elements:\n \");\n    for(i=0;i<n;i++){\n       scanf(\"%d\",&a[i]);\n    }\n    printf(\"enter the element to be searched:\");\n    scanf(\"%d\",&m);\n    search(n,a,m);\n    return 0;\n }\n int search(int n,int *a,int m){\n    for(i=0;i<n;i++){\n       if(m==a[i]){\n          l=1;\n          break;\n       }\n    }\n    if(l==1){\n       printf(\"%d is present in the array\",m);\n    } else {\n       printf(\"%d is not present in the array\",m);\n    }\n }\n]]></string>
+    <string name="ll_l"><![CDATA[// Iterative C program to search an element\n // in the linked list\n #include <stdbool.h>\n #include <stdio.h>\n #include <stdlib.h>\n  /* Link list node */\n struct Node {\n \tint key;\n \tstruct Node* next;\n };\n  /* Given a reference (pointer to pointer) to the head\n of a list and an int, push a new node on the front\n of the list. */\n void push(struct Node** head_ref, int new_key)\n {\n \t/* allocate node */\n \tstruct Node* new_node\n \t\t= (struct Node*)malloc(sizeof(struct Node));\n  \t/* put in the key */\n \tnew_node->key = new_key;\n  \t/* link the old list of the new node */\n \tnew_node->next = (*head_ref);\n  \t/* move the head to point to the new node */\n \t(*head_ref) = new_node;\n }\n  /* Checks whether the value x is present in linked list */\n bool search(struct Node* head, int x)\n {\n \tstruct Node* current = head; // Initialize current\n \twhile (current != NULL) {\n \t\tif (current->key == x)\n \t\t\treturn true;\n \t\tcurrent = current->next;\n \t}\n \treturn false;\n }\n  /* Driver code*/\n int main()\n {\n \t/* Start with the empty list */\n \tstruct Node* head = NULL;\n \tint x = 21;\n  \t/* Use push() to construct below list\n \t14->21->11->30->10 */\n \tpush(&head, 10);\n \tpush(&head, 30);\n \tpush(&head, 11);\n \tpush(&head, 21);\n \tpush(&head, 14);\n \t \t// Function call\n \tsearch(head, 21) ? printf(\"Yes\") : printf(\"No\");\n \treturn 0;\n }\n]]></string>
+
+    <string name="b_array"><![CDATA[#include <stdio.h>\n int BinarySearch(int , int , int *, int );\n  int main()\n {\n     int n, i, a[20], h, l, x, r=0;\n     int *p;\n      printf(\"Enter the number of elements:\n\");\n     scanf(\"%d\",&n);\n      printf(\"Enter the elements:\n\");\n     for( i=0 ; i<n ; i++)\n     {\n         scanf(\"%d\",&a[i]);\n     }\n      p = &a[0];\n     printf(\"Enter the element to be searched:\n\");\n     scanf(\"%d\", &x);\n      l = 0;\n     h = n-1;\n      r = BinarySearch(l, h, p, x);\n      if(r == 1)\n     printf(\"The element %d is found in position %d\", x, i);\n     else\n     printf(\"The element %d is not present in the array\", x);\n      return 0;\n }\n  int BinarySearch(int l, int h, int *p, int x)\n {\n     int mid, a[20], f =0;\n     *p = a[0];\n     mid = ( l + h )/2;\n      while( l <= h )\n     {\n         if( a[mid] == x )\n         {\n             f=1;\n             break;\n         }\n         else if( a[mid] > x )\n         {\n             h = mid-1;\n         }\n         else if( a[mid] < x )\n         {\n             l = mid+1;\n         }\n     }\n     if(f == 1)\n     {return 1;}\n     else\n     {return -1;}\n }\n]]></string>
+    <string name="bb_b"><![CDATA[" #include<stdio.h>\n #include<stdlib.h>\n   struct Node\n {\n     int data;\n     struct Node* next;\n };\n   struct Node *newNode(int x)\n {     struct Node* temp = (struct Node*)malloc(sizeof(struct Node));\n     temp->data = x;\n     temp->next = NULL;\n     return temp;\n }\n   // function to find out middle element\n struct Node* middle(struct Node* start,struct Node* last)\n {\n     if (start == NULL)\n         return NULL;\n       struct Node* slow = start;\n     struct Node* fast = start -> next;\n       while (fast != last)\n     {\n         fast = fast -> next;\n         if (fast != last)\n         {\n             slow = slow -> next;\n             fast = fast -> next;\n         }\n     }\n       return slow;\n }\n   // Function for implementing the Binary\n // Search on linked list\n struct Node* binarySearch(struct Node *head, int value)\n {\n     struct Node* start = head;\n     struct Node* last = NULL;\n       do\n     {\n         // Find middle\n         struct Node* mid = middle(start, last);\n           // If middle is empty\n         if (mid == NULL)\n             return NULL;\n           // If value is present at middle\n         if (mid -> data == value)\n             return mid;\n           // If value is more than mid\n         else if (mid -> data < value)\n             start = mid -> next;\n           // If the value is less than mid.\n         else\n             last = mid;\n       } while (last == NULL ||\n              last != start);\n       // value not present\n     return NULL;\n }\n   // Driver Code\n int main()\n {\n     struct Node *head = newNode(1);\n     head->next = newNode(4);\n     head->next->next = newNode(7);\n     head->next->next->next = newNode(8);\n     head->next->next->next->next = newNode(9);\n     head->next->next->next->next->next = newNode(10);\n     int value = 8;\n     if (binarySearch(head, value) == NULL)\n         printf(\"Value not present\n\");\n     else\n         printf(\"Present\");\n     return 0;\n }\n"]]></string>
+    <string name="quick">
+
+<b>QUICK SORT</b> \n
+
+
+        <b>Follow the below steps to solve the problem:</b>\n\N
+	Like Merge Sort, QuickSort is a Divide and Conquer algorithm.
+		It picks an element as a pivot and partitions the given array around the picked pivot.
+		There are many different versions of quickSort that pick pivot in different ways. \n\n
+
+Always pick the first element as a pivot.\n
+Always pick the last element as a pivot (implemented below)\n
+Pick a random element as a pivot.\n
+Pick median as the pivot.\n
+The key process in quickSort is a partition(). The target of partitions is, given an array and an element x of an array as the pivot, put x at its correct position in a sorted array and put all smaller elements (smaller than x) before x, and put all greater elements (greater than x) after x. All this should be done in linear time.\n\n
+
+
+		There can be many ways to do partition, following pseudo-code adopts the method given in the CLRS book.
+		The logic is simple, we start from the leftmost element and keep track of the index of smaller (or equal to) elements as i.
+		While traversing, if we find a smaller element, we swap the current element with arr[i]. Otherwise, we ignore the current element. \n\n
+
+		<b>Pseudo Code for recursive QuickSort function:</b> \n
+		/* low  –> Starting index,  high  –> Ending index */ \n
+
+quickSort(arr[], low, high) { \n
+
+    if (low less than high) { \n
+
+        /* pi is partitioning index, arr[pi] is now at right place */n
+
+        pi = partition(arr, low, high); \n
+
+        quickSort(arr, low, pi – 1);  // Before pi \n
+
+        quickSort(arr, pi + 1, high); // After pi \n
+		} \n
+		}\n
+		<b>Pseudo code for partition()</b>\n
+		/* This function takes last element as pivot, places the pivot element at its correct position in sorted array,
+		and places all smaller (smaller than pivot) to left of pivot and all greater elements to right of pivot */ \n
+
+partition (arr[], low, high) \n
+{ \n
+    // pivot (Element to be placed at right position) \n
+    pivot = arr[high];  \n
+
+    i = (low – 1)  // Index of smaller element and indicates the \n
+    // right position of pivot found so far\n
+
+    for (j = low; j less tha or equal to high- 1; j++){ \n
+
+        // If current element is smaller than the pivot \n
+        if (arr[j] less than pivot){ \n
+            i++;    // increment index of smaller element \n
+            swap arr[i] and arr[j] \n
+        } \n
+    } \n
+    swap arr[i + 1] and arr[high]) \n
+    return (i + 1) \n
+} \n\n
+
+		<b>How to pick any element as pivot?</b> \n
+With one minor change to the above code, we can pick any element as pivot.
+		For example, to make the first element as pivot, we can simply swap the first and last elements and then use the same code.
+		Same thing can be done to pick any random element as a pivot \n\n
+
+		<b>Advantages of Quick Sort:</b> \n
+It is a divide-and-conquer algorithm that makes it easier to solve problems.\n
+It is efficient on large data sets.\n
+It has a low overhead, as it only requires a small amount of memory to function. \n\n
+<b>Disadvantages of Quick Sort:</b>\n
+It has a worst-case time complexity of O(n^2), which occurs when the pivot is chosen poorly.\n
+It is not a good choice for small data sets.\n
+It can be sensitive to the choice of pivot. \n
+It is not cache-efficient. \n
+It is not stable sort, meaning that if two elements have the same key, their relative order will not be preserved in the sorted output in case of quick sort,
+		because here we swapping of elements according to pivot’s position (without considering their original positions).\n\n
+
+		<b>C Program for Quick Sort in Recursive Mode</b>\n
+		// C code for the recursive function of Quicksort \n
+#include stdio.h \n
+
+// Function to swap numbers \n
+void swap(int* a, int* b) \n
+{ \n
+	int temp = *a; \n
+	*a = *b; \n
+	*b = temp; \n
+} \n
+
+//Partition Function \n
+int partition(int arr[], int low, int high) \n
+{ \n
+	int pivot = arr[high]; \n
+	int i = (low - 1); \n
+    int j; \n
+	for (j = low; j less than or equal to high - 1; j++) { \n
+		if (arr[j] less than or equal to pivot) { \n
+			i++; \n
+			swap(&amp;arr[i], &amp;arr[j]); \n
+		} \n
+	} \n
+	swap(&amp;arr[i + 1], &amp;arr[high]);  \n
+	return (i + 1); \n
+} \n
+
+// Quick Sort function \n
+void quicksort(int Arr[], int low, int high) \n
+{ \n
+	if (low less than high) { \n
+		// pi = Partition index \n
+		int pi = partition(Arr, low, high); \n
+		quicksort(Arr, low, pi - 1); \n
+		quicksort(Arr, pi + 1, high);    \n
+	} \n
+} \n
+// Main Function \n
+int main() \n
+{ \n
+	int size = 5; \n
+	int array[size] = { 11,9,6,16,7 }; \n
+
+	quicksort(array, 0, size - 1); \n
+
+    int i; \n
+	for(i = 0; i less than size; i++) { \n
+		printf("%d ",array[i]); \n
+	} \n
+} \n\n
+		 <b>C Program for Quick Sort in Iterative Mode</b> \n
+		// An iterative implementation of quick sort
+#include stdio.h \n
+
+// Function for swapping two elements \n
+void swap(int* a, int* b) \n
+{ \n
+	int t = *a; \n
+	*a = *b; \n
+	*b = t; \n
+} \n
+
+// Partition function \n
+int partition(int arr[], int low, int high) \n
+{ \n
+	int x = arr[high]; //this is pivot \n
+	int i = (low - 1); // i index is used for swapping \n
+
+	for (int j = low; j less than or equal to high - 1; j++) { \n
+		if (arr[j] less tha or equal to x) { \n
+			i++; \n
+			swap(&amp;arr[i], &amp;arr[j]); \n
+		} \n
+	} \n
+	swap(&amp;arr[i + 1], &amp;arr[high]); \n
+	return (i + 1);  \n
+} \n
+void quicksort(int arr[], int low, int high) \n
+{ \n
+	// Create a temporary array  \n
+	int temp[high - low + 1]; \n
+
+	// initialize i variable with - \n
+	int i = -1; \n
+
+	// add values of low and High \n
+	temp[++i] = low; \n
+	temp[++i] = high;      \n
+
+	// remove all elements from the array \n
+	while (i >= 0) { \n
+		high = temp[i--];        \n
+		low = temp[i--];\n
+
+		// get the pivot element by using the partition algorithm \n
+		int pi = partition(arr, low, high); \n
+
+		// add index from 0 to pi-1 to array, if any \n
+		if (pi - 1 > low) { \n
+			temp[++i] = low; \n
+			temp[++i] = pi - 1; \n
+		} \n
+
+		// add index of pi+1 to high to the array, if any \n
+		if (pi + 1 less than high) { //;;p:1 \n
+			temp[++i] = pi + 1; \n
+			temp[++i] = high; \n
+		} \n
+	} \n
+} \n
+
+// Main function \n
+int main() \n
+{ \n
+
+	int array[] = { 11,9,6,16,7 }; \n
+    int size = sizeof(array) / sizeof(*array); \n
+	quicksort(array, 0, size - 1); \n
+	int i; \n
+	for (i = 0; i less than size; i++){ \n
+		printf("%d ", array[i]); } \n
+} \n
+
+
+</string>
+    <string name="radix">
+
+<b>RADIX SORT</b> \n
+		The lower bound for the Comparison based sorting algorithm (Merge Sort, Heap Sort, Quick-Sort .. etc) is Ω(nLogn), i.e.,
+		they cannot do better than nLogn.Counting sort is a linear time sorting algorithm that sort in O(n+k) time when elements are in the range from 1 to k. \n\n
+
+	 <b>The Radix Sort Algorithm</b>	\n
+
+Do the following for each digit I where I varies from the least significant digit to the most significant digit.
+		Here we will be sorting the input array using counting sort (or any stable sort) according to the i’th digit. \n\n
+
+		<b>Example:</b>
+
+Original, unsorted list: 170, 45, 75, 90, 802, 24, 2, 66 Sorting by least significant digit (1s place) gives: \n
+		[*Notice that we keep 802 before 2, because 802 occurred before 2 in the original list, and similarly for pairs 170 &amp; 90 and 45 &amp; 75.]
+		170, 90, 802, 2, 24, 45, 75, 66 Sorting by next digit (10s place) gives: [*Notice that 802 again comes before 2 as 802 comes before 2 in the previous list.]
+		802, 2, 24, 45, 66, 170, 75, 90 Sorting by the most significant digit (100s place) gives: 2, 24, 45, 66, 75, 90, 170, 802 \n\n
+
+		<b>Key points about Radix Sort:</b>\n
+
+Some key points about radix sort are given here \n
+
+1.It makes assumptions about the data like the data must be between a range of elements. \n
+2.Input array must have the elements with the same radix and width. \n
+3.Radix sort works on sorting based on an individual digit or letter position. \n
+4.We must start sorting from the rightmost position and use a stable algorithm at each position. \n
+5.Radix sort is not an in-place algorithm as it uses a temporary count array. \n\n
+
+	<b>	Advantages:</b> \n
+1.Radix sort has a linear time complexity, which makes it faster than comparison-based sorting algorithms such as quicksort and merge sort for large data sets. \n
+2.It is a stable sorting algorithm, meaning that elements with the same key value maintain their relative order in the sorted output. \n
+3.Radix sort is efficient for sorting large numbers of integers or strings. \n
+4.It can be easily parallelized.\n\n
+<b>Disadvantages:</b> \n
+1.Radix sort is not efficient for sorting floating-point numbers or other types of data that cannot be easily mapped to a small number of digits. \n
+2.It requires a significant amount of memory to hold the count of the number of times each digit value appears. \n
+3.It is not efficient for small data sets or data sets with a small number of unique keys. \n
+4.It requires that the data being sorted can be represented in a fixed number of digits, which may not be the case for some types of data. \n\n
+
+
+
+<b>C Program to implement Radix Sort.</b> \n
+		#include stdio.h \n
+int get_max (int a[], int n){ \n
+   int max = a[0]; \n
+   for (int i = 1; i less than n; i++) \n
+      if (a[i] > max) \n
+         max = a[i]; \n
+   return max; \n
+} \n
+void radix_sort (int a[], int n){ \n
+   int bucket[10][10], bucket_cnt[10]; \n
+   int i, j, k, r, NOP = 0, divisor = 1, lar, pass; \n
+   lar = get_max (a, n); \n
+   while (lar > 0){ \n
+      NOP++; \n
+      lar /= 10; \n
+   } \n
+   for (pass = 0; pass less than NOP; pass++){ \n
+      for (i = 0; i less than 10; i++){ \n
+         bucket_cnt[i] = 0; \n
+      } \n
+      for (i = 0; i less than n; i++){ \n
+         r = (a[i] / divisor) % 10; \n
+         bucket[r][bucket_cnt[r]] = a[i]; \n
+         bucket_cnt[r] += 1; \n
+      } \n
+      i = 0; \n
+      for (k = 0; k less than 10; k++){ \n
+         for (j = 0; j less than bucket_cnt[k]; j++){  \n
+            a[i] = bucket[k][j]; \n
+            i++; \n
+         } \n
+      } \n
+      divisor *= 10; \n
+      printf ("After pass %d : ", pass + 1); \n
+      for (i = 0; i less than n; i++) \n
+         printf ("%d ", a[i]); \n
+
+   } \n
+}  \n
+int main (){ \n
+   int i, n, a[10]; \n
+   printf ("Enter the number of items to be sorted: "); \n
+   scanf ("%d", &amp;n); \n
+   printf ("Enter items: "); \n
+   for (i = 0; i less than n; i++){ \n
+      scanf ("%d", &amp;a[i]); \n
+   } \n
+   radix_sort (a, n); \n
+   printf ("Sorted items : "); \n
+   for (i = 0; i less than n; i++) \n
+      printf ("%d ", a[i]); \n
+
+   return 0;\n
+}\n
+
+
+</string>
+    <string name="br_s">branching_statements</string>
+    <string name="brs"><b> OVERVIEW\n </b>A branch is an instruction in a computer program that can cause a computer to begin executing a different instruction sequence and thus deviate from its default behavior of executing instructions in order.[1] Common branching statements include break, continue, return, and goto.\n <b>Discussion</b>\n Branching statements allow the flow of execution to jump to a different part of the program. The common branching statements used within other control structures include: break, continue, return, and goto. The goto is rarely used in modular structured programming. Additionally, we will add to our list of branching items a pre-defined function commonly used in programming languages of: exit.\n<b> Examples:</b>\n break\n The break is used in one of two ways; with a switch to make it act like a case structure or as part of a looping process to break out of the loop. The following gives the appearance that the loop will execute 8 times, but the break statement causes it to stop during the fifth iteration.\n counter = 0;\n <![CDATA[While counter < 8\n     Output counter\n     If counter == 4\n         break\n     counter += 1\n continue\n The following gives the appearance that the loop will print to the monitor 8 times, but the continue statement causes it not to print number 4.\n  For counter = 0, counter < 8, counter += 1\n     If counter == 4\n         continue\n     Output counter\n return\n The return statement exits a function and returns to the statement where the function was called.\n  Function DoSomething\n     statements\n Return <optional return value>\n goto\n The goto structure is typically not accepted in good structured programming. However, some programming languages allow you to create a label with an identifier name followed by a colon. You use the command word goto followed by the label. \n some lines of code; \n goto label;                // jumps to the label\n some lines of code; \n some lines of code; \n some lines of code; \n label: some statement;     // Declared label\n some lines of code;\n exit\n Although exit is technically a pre-defined function, it is covered here because of its common usage in programming. A good example is the opening a file and then testing to see if the file was actually opened. If not, we have an error that usually indicates that we want to prematurely stop the execution of the program. The exit function terminates the running of the program and in the process returns an integer value back to the operating system. It fits the definition of branching which is to jump to some other place in the program.\n  Key Terms\n branching statements\n Allow the flow of execution to jump to a different part of the program.\n break\n A branching statement that terminates the existing structure.\n continue\n A branching statement that causes a loop to stop its current iteration and begin the next one.\n exit\n A predefined function used to prematurely stop a program and return to the operating system.\n goto\n An unstructured branching statement that causes the logic to jump to a different place in the program.\n return\n A branching statement that causes a function to jump back to the function that called it.\n"]]></string>
+
+    <string name="fs"><b>Basics of File Handling in C</b>\n   Creation of a new file (fopen() with attributes as “a” or “a+” or “w” or “w+”)\n Opening an existing file (fopen())\n Reading from file (fscanf() or fgets())\n Writing to a file (fprintf() or fputs())\n Moving to a specific location in a file (fseek(), rewind())\n Closing a file (fclose())\n The text in the brackets denotes the functions used for performing those operations.\n <b> Why do we need File Handling in C?</b>\n The output of a C program is generally deleted when the program is closed. Sometimes, we need to store that output for purposes like data analysis, result presentation, comparison of output for different conditions,  etc. The use of file handling is exactly what the situation calls for. \n In order to understand why file handling makes programming easier, let us look at a few reasons:\n  Reusability: The file-handling process keeps track of the information created after the program has been run.\n Portability: Without losing any data files can be transferred to another in the computer system. The risk of flawed coding is minimized with this feature.\n Efficient: A large amount of input may be required for some programs. File handling allows you to easily access a part of a code using individual commands which saves a lot of time and reduces the chance of errors.\n Storage Capacity: Files allow you to store data without having to worry about storing everything simultaneously in a program.\n <b>Types of Files in C</b>\n Generally, a text file contains alphabets, digits, and special characters or symbols, while a binary file contains bytes or a compiled version of the text. It is important to recognize two types of files when dealing with files:\n Text Files\n Binary Files\n Text Files: Text files contain data in the form of ASCII characters and are generally used to store a stream of characters. Each line in a text file ends with a new line character (‘/n’). Text files are used to store the source code.\n  Binary Files: Binary files contain data that is stored in a similar manner to how it is stored in the main memory. Instead of ASCII characters, it is stored in binary format. The binary files can be created only from within a program and their contents can only be read by a program.\n Opening or Creating a File\n For opening a file, fopen() function is used with the required access modes. Some of the commonly used file access modes are mentioned below.\n  <b>File opening modes in C:</b> \n Opening Modes\tDescription\n r\tSearches file. If the file is opened successfully fopen( ) loads it into memory and sets up a pointer that points to the first character in it. If the file cannot be opened fopen( ) returns NULL.\n rb\t Open for reading in binary mode. If the file does not exist, fopen( ) returns NULL.\n w\tSearches file. If the file exists, its contents are overwritten. If the file doesn’t exist, a new file is created. Returns NULL, if unable to open the file.\n wb\tOpen for writing in binary mode. If the file exists, its contents are overwritten. If the file does not exist, it will be created.\n a\tSearches file. If the file is opened successfully fopen( ) loads it into memory and sets up a pointer that points to the last character in it. If the file doesn’t exist, a new file is created. Returns NULL, if unable to open the file.\n ab\t Open for append in binary mode. Data is added to the end of the file. If the file does not exist, it will be created.\n r+\tSearches file. It is opened successfully fopen( ) loads it into memory and sets up a pointer that points to the first character in it. Returns NULL, if unable to open the file.\n rb+\t Open for both reading and writing in binary mode. If the file does not exist, fopen( ) returns NULL.\n w+\tSearches file. If the file exists, its contents are overwritten. If the file doesn’t exist a new file is created. Returns NULL, if unable to open the file.\n wb+\tOpen for both reading and writing in binary mode. If the file exists, its contents are overwritten. If the file does not exist, it will be created.\n a+\tSearches file. If the file is opened successfully fopen( ) loads it into memory and sets up a pointer that points to the last character in it. If the file doesn’t exist, a new file is created. Returns NULL, if unable to open the file.\n ab+\tOpen for both reading and appending in binary mode. If the file does not exist, it will be created.\n As given above, if you want to perform operations on a binary file, then you have to append ‘b’ at the last. For example,<![CDATA[ instead of “w”, you have to use “wb”, instead of “a+” you have to use “a+b”. For performing the operations on the file, a special pointer called File pointer is used which is declared as:\n  FILE *filePointer; \n  So, the file can be opened as \n  filePointer = fopen(“fileName.txt”, “w”)\n The second parameter can be changed to contain all the attributes listed in the above table.\n  Reading From a File\n The file read operations can be performed using functions fscanf or fgets. Both the functions performed the same operations as that of scanf and gets but with an additional parameter, the file pointer. So, it depends on you if you want to read the file line by line or character by character. And the code snippet for reading a file is as: \n    FILE * filePointer; \n  filePointer = fopen(“fileName.txt”, “r”);\n  fscanf(filePointer, \"%s %s %s %d\", str1, str2, str3, &year);\n Writing to a File\n\n The file write operations can be performed by the functions fprintf and fputs with similarities to read operations. The snippet for writing to a file is as:\n  FILE *filePointer ;\n   filePointer = fopen(“fileName.txt”, “w”);\n  fprintf(filePointer, \"%s %s %s %d\", \"We\", \"are\", \"in\", 2012);\n Closing a File\n After every successful file operation, you must always close a file. For closing a file, you have to use fclose() function. The snippet for closing a file is given as:\n  FILE *filePointer ; \n  filePointer= fopen(“fileName.txt”, “w”);\n  ---------- Some file Operations -------\n  fclose(filePointer)\n]]></string>
+    <string name="pont">A pointer is a variable that stores the memory address of another variable as its value.\n  A pointer variable points to a data type (like int) of the same type, and is created with the * operator.\n  The address of the variable you are working with is assigned to the pointer:\n  <b>Example</b>\n <![CDATA["int myAge = 43;     // An int variable\n int* ptr = &myAge;  // A pointer variable, with the name ptr, that stores the address of myAge\n  // Output the value of myAge (43)\n printf(\"%d\n\", myAge);\n  // Output the memory address of myAge (0x7ffe5367e044)\n printf(\"%p\n\", &myAge);\n  // Output the memory address of myAge with the pointer (0x7ffe5367e044)\n printf(\"%p\n\", ptr);\n "]]>
+        <b>Example explained:  </b>\n
+    <![CDATA["Create a pointer variable with the name ptr, that points to an int variable (myAge). Note that the type of the pointer has to match the type of the variable you're working with (int in our example).\n  Use the & operator to store the memory address of the myAge variable, and assign it to the pointer.\n  Now, ptr holds the value of myAge's memory address.\n  Dereference\n In the example above, we used the pointer variable to get the memory address of a variable (used together with the & reference operator).\n  You can also get the value of the variable the pointer points to, by using the * operator (the dereference operator):\n  Example\n int myAge = 43;     // Variable declaration\n int* ptr = &myAge;  // Pointer declaration\n  // Reference: Output the memory address of myAge with the pointer (0x7ffe5367e044)\n printf(\"%p\n\", ptr);\n  // Dereference: Output the value of myAge with the pointer (43)\n printf(\"%d\n\", *ptr);\n Note that the * sign can be confusing here, as it does two different things in our code:\n  When used in declaration (int* ptr), it creates a pointer variable.\n When not used in declaration, it act as a dereference operator.\n Good To Know: There are two ways to declare pointer variables in C:\n  int* myNum;\n int *myNum;\n Notes on Pointers:\n  *Pointers are one of the things that make C stand out from other programming languages, like Python and Java.\n  *They are important in C, because they allow us to manipulate the data in the computer's memory. This can reduce the code and improve the performance. If you are familiar with data structures like lists, trees and graphs, you should know that pointers are especially useful for implementing those. And sometimes you even have to use pointers, for example when working with files.\n  *But be careful; pointers must be handled with care, since it is possible to damage data stored in other memory addresses.\n "]]> </string>
+    <string name="cf">"  The control statements used in the C language help a user to specify a program control’s flow. In simpler words, the control statements help users specify the order of execution of the instructions present in a program. These make it possible for the program to make certain decisions, perform various tasks repeatedly, or even jump from any one section of the code to a different section.\n <b>Control Statements Types Used in C Language:</b>\n The C language provides support for the following set of statements in its program:\n  1.If Statements\n 2.Switch Statement\n 3.Conditional Operator Statement\n 4.Goto Statement\n 5.Loop Statements\n  <b>1. The If Statements </b>\n This type of statement would enable a programmer to choose various instruction sets on the basis of the available condition. The instruction sets will only get executed when the evaluation of the condition turns out to be true. In case the evaluation of the condition is false, there will be an execution of a different instruction set. These are also known as decision control statements. These are of the following types:\n  1.Simple else or Null else\n 2.Else if ladder\n 3.Nested if\n 4.If… else\n  <b>1.1. The If… Else Statement</b>\n When we use the if… else statement, there occurs an execution of two different types of statements in a program. First, if the available condition in the program is true, then there will be an execution of the first statement. The execution of the second condition will only occur if the condition available to us is false.\n The syntax for this statement is as follows:\n  If (condition 1)\n  {\n  Statement 1 (s1);\n  }\n  else\n  {\n  <![CDATA[Statement 2 (s2)\n  }\n  Statement\n  Example:\n height=int(input(“Please enter your height: “))\n  if height>=160:\n  qualified=True\n  else:\n  qualified=False\n  print(“Qualification status: “,qualification)\n   1.2. The Nested If Statement\n In this case, the condition available in the next if statement (the second statement) will only get evaluated if the evaluation of the condition available in the first statement turns out to be true. This occurs throughout the program that has a nested statement.\n  The syntax for this statement is as follows:\n  If (condition 1)\n  {\n  If (condition 2)\n  {\n  Statement 1 (s1);\n  }\n  Else\n  {\n  Statement 2 (s2)\n  }\n }\n  Example:\n if age>0:\n  print(“The candidate is a baby”)\n  if age<4:\n  print(“The candidate is a toddler”)\n  else if age<18:\n  print(“The candidate is not an adult”)\n  else if age<50:\n  print(“The candidate is an adult”)\n  else:\n  print(“No input of candidate”)\n   1.3. The Else If Ladder\n In this statement, the execution of an array of instructions occurs only when the available condition is correct. The verification of the next condition occurs when this first condition is incorrect. In case all of the specifications fail even after the verification, then there will be an execution of the default block statements. The remainder of the program’s ladder is shown below.\n  The syntax for this statement is as follows:\n  If (condition 1)\n  {\n  Statement 1 (s1);\n  }\n  Else if (condition 2)\n  {\n  Statement 2 (s2);\n  }\n  else if (condition 3)\n  {\n  Statement 3 (s3)\n  }\n  …  Else\n  {\n  Statement 4 (s4)\n  }\n  Statement (s);\n  Example:\n if scores>=85:\n  result=’A+’\n  else if scores>=65:\n  result=’B+’\n  else if scores>=45:\n  result=’C+’\n  else:\n  result=”FAIL”\n  print(“Result: “,result)\n   1.4. The Simple Else or Null Else\n This condition occurs when a programmer can skip or execute a set of various instructions on the basis of the condition value. We select a one-way, simple statement. When the available condition gets evaluated as true, then a set of various statements will be carried out. In case the condition is false, then the control here will proceed ahead in the program with the declaration mentioned below, after the program’s if declaration.\n  The syntax for this statement is as follows:\n  If (condition1)\n  {\n  Statement 1 (s1);\n  }\n  Statement 2 (s2);\n   2. The Switch Statements\n The C language offers its users with a selection statement in various ways in case a program becomes difficult to read with an increased number of conditions. A switch statement is a multi-way type of selection statement that would resolve this issue. The switch declaration comes into play when more than three alternatives (conditions) exist in a program. This command then switches between all the available blocks on the basis of the expression value. Then, each block has a corresponding value with it.\n The syntax for this statement is as follows:\n  Switch (expression_A)\n  {\n  Label case_A:\n  Statement A (sA);\n  Break;\n  Label case_B:\n  Statement B (sB);\n  Break;\n  Label case_C;\n  Statement C (sC);\n  Break;\n  ….\n  Label case_Z:\n  Statement Z (sZ);\n  Break;\n  Default:\n  Statement_1 (s1);\n  Break;\n  }\n  Every block is shown here with the use of the case keyword. As a matter of fact, the case keyword is also followed by the block label. Note that the break statement and default block statement are very optional in the case of the switch statement.\n   3. The Conditional Operator Statements\n The C language also comes with a very unusual operator for its programmers – the conditional operator.\n  The syntax of the conditional operator statements is as follows:\n  (condition 1)? expression_1: expression_2\n  Here, the execution of the expression_1 will only occur when the given condition is valid. In case this statement is incorrect, then the execution of the expression_2 will occur.\n  Example:\n #include <stdio.h>\n  int main() {\n  int b;\n  int a = 2;\n  b = (a >= 6) ? 6 : a;/* Here, it is equivalent to: if (a >= 5) b = 5; else b = x; */\n  printf(“b =%d “,b);\n  return 0;}\n  The output obtained here would be:\n  b = 2\n   4. The Goto Statement\n The Goto statement is especially known in the case of jumping control statements. We mainly use the goto statement when we want to transfer a program’s control from any one block to another. Also, we use the goto keyword for the declaration of the goto statement.  The syntax of the goto statement is as follows:\n  goto name_of_label;\n  name_of_label;\n  In the syntax given above, we have used the goto as a keyword for transferring the control of the program to the name_of_label. Here, the name_of_label refers to a variable’s name. Thus, in simpler words, the goto here will ultimately transfer the program’s control to the name_of_label. Thus, there will occur an execution of all those statements that are followed by the name_of_label.\n "]]></string>
+    <string name="sseg">
+   PROBLEM STATEMENTS TO WORK ON..!!" \n\n
+        Merge Sort \n\n
+Quicksort \n\n
+Iterative Implementation of Quicksort \n\n
+Hybrid QuickSort \n\n
+External merge sort \n\n
+Custom Sort | Sort elements by their frequency and Index \n\n
+Custom Sort | Sort elements of the array by order of elements defined by the second array \n\n
+Inversion Count of an array \n\n
+Segregate positive and negative integers in linear time \n\n
+
+Find the smallest window in array sorting which will make the entire array sorted \n\n
+Find largest number possible from set of given numbers \n\n
+Move all zeros present in the array to the end \n\n
+Sort binary array in linear time \n\n
+Merge Sort for Singly Linked List \n\n
+Group anagrams together from given list of words \n\n
+Activity Selection Problem \n\n
+Lexicographic sorting of given set of keys \n\n
+Heap Sort (Out-of-place and In-place implementation in C++ and C) \n\n
+Merge M sorted lists of variable length \n\n
+Merge M sorted lists each containing N elements \n\n
+Find all palindromic permutations of a string \n\n
+Find all lexicographically next permutations of a string sorted in ascending order \n\n
+Merge two sorted linked lists from their end \n\n
+Sort an array containing 0’s, 1’s and 2’s (Dutch national flag problem) \n\n
+Find pair with given sum in the array \n\n
+Inplace merge two sorted arrays \n\n
+Merge two arrays by satisfying given constraints \n\n
+Find maximum product of two integers in an array \n\n
+Find all distinct combinations of given length \n\n
+Find all distinct combinations of given length with repetition allowed \n\n
+Merging Overlapping Intervals \n\n
+    </string>
+    <string name="aeg">
+  problem To find all Hamiltonian Paths present in a graph. \n\n
+ problem To solve the N Queen problem. \n\n
+Maze solving problem. \n\n
+solve The Knight\'s tour problem. \n\n
+	problem on pattern matching \n\n
+ searching string in a bigger text \n\n
+		Longest Common Subsequence \n\n
+Floyd-Warshall Algorithm \n\n
+		find the shortest path is a directed graph \n\n
+ find the transitive closure of directed graphs \n\n
+ find the Inversion of real matrices \n\n
+ testing whether an undirected graph is bipartite \n\n
+		 calculating shortest paths in routing algorithms \n\n
+ finding the shortest path \n\n
+Cycle detection in an undirected graph \n\n
+find minimum spanning tree \n\n
+		 find the path in a graph \n\n
+problem To test if the graph is bipartite \n\n
+ find the strongly connected components of a graph \n\n
+ detecting cycles in a graph \n\n
+
+    </string>
+    <string name="nsb">"Method 1:
+1) Start in the leftmost column
+2) If all queens are placed
+    return true
+3) Try all rows in the current column.
+   Do following for every tried row.
+    a) If the queen can be placed safely in this row
+       then mark this [row, column] as part of the
+       solution and recursively check if placing
+       queen here leads to a solution.
+    b) If placing the queen in [row, column] leads to
+       a solution then return true.
+    c) If placing queen doesn't lead to a solution then
+       un mark this [row, column] (Backtrack) and go to
+       step (a) to try other rows.
+4) If all rows have been tried and nothing worked,
+   return false to trigger backtracking."</string>
+    <string name="aa1">Kruskal\'s algorithm is a minimum spanning tree algorithm that takes a graph as input and finds the subset of the edges of that graph which form a tree that includes every vertex has the minimum sum of weights among all the trees that can be formed from the graph.\n
+ Kruskal algorithm is the concept that is introduced in the graph theory of discrete mathematics.\n
+ ->It is used to discover the shortest path between two points in a connected weighted graph.\n
+ ->This algorithm converts a given graph into the forest, considering each node as a separate tree.\n
+->These trees can only link to each other if the edge connecting them has a low value and doesn’t generate a cycle in MST structure.
+ *Introduction to Kruskal Algorithm.\n
+ The Kruskal algorithm is used to generate a minimum spanning tree for a given graph.\n
+ But,what exactly is a minimum spanning tree…?\n
+ A minimum spanning tree is a subset of a graph with the same number of vertices as the graph and edges equal to the number of vertices -1.\n
+ It also has a minimal cost for the sum of all edge weights in a spanning tree.\n</string>
+    <string name="aa2">Steps for Creating Minimum Spanning Tree Using Kruskal Algorithm:\n
+</string>
+    <string name="aa3">->Step 1: Sort all edges in increasing order of their edge weights.\n
+->Step 2: Pick the smallest edge.\n
+->Step 3: Check if the new edge creates a cycle or loop in a spanning tree.\n
+->Step 4: If it doesn’t form the cycle, then include that edge in MST. Otherwise, discard it.\n
+->Step 5: Repeat from step 2 until it includes |V| - 1 edges in MST.
+
+</string>
+    <string name="aa4">*Implementation of Kruskal Algorithm:\n</string>
+    <string name="aa5">*The strategy to implement the Kruskal algorithm using Union-Find is given below:\n
+ ->Construct a structure to keep track of the source and destination nodes, as well as their weight.\n
+ ->Sort all the edges of a graph according to their edge-weight values.\n
+ ->Create three distinct sets to maintain nodes of a graph, their hierarchy in a tree, and corresponding ranks for every node.\n
+ ->Primarily, initialize all rank values to 0 and parent values to -1 (representing each node as its own tree itself).\n
+ ->For each insertion of an edge in MST, you will update the rank and parent of each node.\n
+ ->Do not insert the edge connecting two nodes if they have the same parent node, as this will cause a cycle in the tree structure
+</string>
+    <string name="aa6">KRUSKAL(G):
+    A = ∅
+    For each vertex v ∈ G.V:
+        MAKE-SET(v)
+    For each edge (u, v) ∈ G.E ordered by
+        increasing order by weight(u, v):
+        if FIND-SET(u) ≠ FIND-SET(v):
+        A = A ∪ {(u, v)}
+        UNION(u, v)
+    return A</string>
+    <string name="aa7">Landing cables.\n TV Network.\nTour Operations.\n LAN Networks.\n A network of pipes for drinking water or natural gas.\n An electric grid.
+Single-link Cluster.</string>
+    <string name="aa8">Applications of Kruskal Algorithm are:</string>
+</resources>
